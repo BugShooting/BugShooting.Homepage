@@ -1,6 +1,9 @@
 # Site settings
 title: Bug Shooting
 email: mail@bugshooting.com
+description: Screen Capture Software for Bug Tracking and Image Sharing
+baseurl: "/test.github.io"
+url: "https://alexejhirsch.github.io"
 
 # Build settings
 markdown: kramdown
