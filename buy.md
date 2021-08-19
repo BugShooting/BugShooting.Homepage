@@ -13,7 +13,7 @@ permalink: /buy/
       <p>{{ price.price_title }} <span class="price_small">{{ price.price }}</span></p>
     </div>
     
-    {% if price.price_title == "" %}
+    {% if price.price_title == '' %}
 
       <div class="col-md-6">
         <a class="btn btn-yellow" href="{{ price.purchase_link }}">Purchase</a>
