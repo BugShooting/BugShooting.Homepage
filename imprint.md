@@ -4,4 +4,4 @@ title: Imprint
 permalink: /imprint/
 ---
 
-Hello World
+IMPRINT
