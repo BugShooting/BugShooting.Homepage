@@ -10,6 +10,6 @@ Parkstr. 18 H
 
 26188 Edewecht
 
-<mail@bugshooting.com>
+<{{ site.email }}>
 
 {% include agreement.md %}
