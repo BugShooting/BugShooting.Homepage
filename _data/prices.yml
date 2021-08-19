@@ -1,0 +1,34 @@
+- title: 1 License
+  price: 9,99 €
+  purchase_link: https://secure.shareit.com/shareit/checkout.html?PRODUCT[300321794]=1&backlink=http%3A%2F%2Fwww.bugshooting.com
+  purchase_volume_link: 
+  
+- title: from 5 Licenses
+  price_title: each
+  price: 6,99 €
+  purchase_link: https://secure.shareit.com/shareit/checkout.html?PRODUCT[300321794]=5&backlink=http%3A%2F%2Fwww.bugshooting.com
+  purchase_volume_link: https://secure.shareit.com/shareit/checkout.html?PRODUCT[300321794]=5&ADD[300321794][ADDITIONAL1]=VOLUME&backlink=http%3A%2F%2Fwww.bugshooting.com
+  
+- title: from 20 Licenses
+  price_title: each
+  price: 4,99 €
+  purchase_link: XXXXXXXXXXXXXXXXXXXXX
+  purchase_volume_link: XXXXXXXXXXXXXXXXXXXXX
+  
+- title: from 50 Licenses
+  price_title: each
+  price: 3,99 €
+  purchase_link: XXXXXXXXXXXXXXXXXXXXX
+  purchase_volume_link: XXXXXXXXXXXXXXXXXXXXX
+  
+- title: from 100 Licenses
+  price_title: each
+  price: 2,99 €
+  purchase_link: XXXXXXXXXXXXXXXXXXXXX
+  purchase_volume_link: XXXXXXXXXXXXXXXXXXXXX
+  
+- title: from 500 Licenses
+  price_title: each
+  price: 1,99 €
+  purchase_link: XXXXXXXXXXXXXXXXXXXXX
+  purchase_volume_link: XXXXXXXXXXXXXXXXXXXXX
