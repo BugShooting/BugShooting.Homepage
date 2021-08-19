@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Buy
+title: Buy For Comercial Usage
 permalink: /buy/
 ---
 
