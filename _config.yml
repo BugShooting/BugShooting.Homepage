@@ -1,5 +1,6 @@
 # Site settings
 title: Bug Shooting
+email: mail@bugshooting.com
 
 # Build settings
 markdown: kramdown
