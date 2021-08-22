@@ -43,9 +43,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "bootstrap-theme.min"
-        "bootstrap.min"
-        "dosis-font"
-        "style"
+        "bootstrap-theme.min",
+        "bootstrap.min",
+        "dosis-font",
+        "style",
         "themify-icons"
 ;
