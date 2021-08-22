@@ -3,23 +3,23 @@ layout: default
 ---
 
 <div class="container-fluid">
-  <!-- Start: Header -->
+
   <div class="row hero-header" id="home">
     <div class="col-md-7">
-      <img src="img/logo.png" class="logo" alt="..."/>
+      <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="..."/>
       <h1><%=Resources.Language.Title1%></h1>
       <h3><%=Resources.Language.Index_Text4%></h3>
-      <a href="/?StartDownload=1" class="btn btn-lg btn-red">Downlaod Now <span class="ti-arrow-right"></span></a>
+      <a href="XXXXXXXXXXXXXXXXXXXXXXXXXX" class="btn btn-lg btn-red">Downlaod Now <span class="ti-arrow-right"></span></a>
     </div>
     <div class="col-md-5 hidden-sm hidden-xs">
-      <img src="img/bug_large.png" class="rocket" alt="..." />
+      <img src="{{ site.baseurl }}/assets/bug_large.png" class="rocket" alt="..." />
     </div>
   </div>
-  <!-- End: Header -->
+
 </div>
 
 <div class="container">
-  <!-- Start: Desc -->
+
   <div class="row me-row content-ct">
     <h2 class="row-title">Why This Software Super Cool?</h2>
     <div class="col-md-4 feature">
@@ -53,33 +53,31 @@ layout: default
       <p>Bug Shooting is absolutely free for personal and non comercial usage.</p>
     </div>
   </div>
-  <!-- End: Desc -->
+
 </div>
 
 <div class="container-fluid whatnext" id="whatnext">
 
   <div class="container">
 
-    <!-- Start: What next -->
     <div class="row me-row content-ct">
       <h2 class="row-title">What next?</h2>
       <div class="col-md-4 feature">
         <span class="ti-download"></span>
         <h3>Get Bug Shooting</h3>
-        <a href="/?StartDownload=1" class="btn btn-lg btn-red">Download</a>
+        <a href="XXXXXXXXXXXXXXXXXXXXXXX" class="btn btn-lg btn-red">Download</a>
       </div>
       <div class="col-md-4 feature">
         <span class="ti-crown"></span>
         <h3>Free For Personal Usage</h3>
-        <a href="/Free" class="btn btn-lg btn-red">Get it</a>
+        <a href="{{ site.baseurl }}/free" class="btn btn-lg btn-red">Get it</a>
       </div>
       <div class="col-md-4 feature">
         <span class="ti-shopping-cart"></span>
         <h3>Buy for Comercial Usage</h3>
-        <a href="/Buy" class="btn btn-lg btn-red">Buy</a>
+        <a href="{{ site.baseurl }}/buy" class="btn btn-lg btn-red">Buy</a>
       </div>
     </div>
-    <!-- End: What next -->
 
   </div>
 
@@ -89,41 +87,26 @@ layout: default
 
   <div class="container">
 
-    <!-- Start: What next -->
     <div class="row me-row content-ct">
       <h2 class="row-title">Need more?</h2>
       <div class="col-md-4 col-md-offset-2">
-        <h3><a href="/ReleaseNotes">Release Notes</a></h3>
-        <h3><a href="/LicenseAgreement">License Agreement</a></h3>
-        <h3><a href="/Documentation">Documentation</a></h3>
-        <h3><a href="/StartTranslate">Help Translate</a></h3>
+        <h3><a href="{{ site.baseurl }}/releasenotes">Release Notes</a></h3>
+        <h3><a href="{{ site.baseurl }}/agreement">License Agreement</a></h3>
+        <h3><a href="XXXXXXXXXXXXXXXXXXXXXXXXXXXX">Documentation</a></h3>
+        <h3><a href="XXXXXXXXXXXXXXXXXXXXXXXXXXXX">Help Translate</a></h3>
       </div>
       <div class="col-md-4">
         <h3><a href="/ActivateLicense">Activate License</a></h3>
-        <h3><a href="<%=Resources.Secure_Language.Affiliate_Link%>">Affiliate Program</a></h3>
-        <h3><a href="mailto:mail@bugshooting.com">Contact</a></h3>
+        <h3><a href="{{ site.email }}">Contact</a></h3>
       </div>
     </div>
-    <!-- End: What next -->
 
   </div>
 
 </div>
 
-
-<!-- Start: Footer -->
 <div class="container-fluid footer">
 
-  <div class="row footer-credit">
-    <div class="col-md-6 col-sm-6">
-      <p>Copyright &copy; 2009-2017 Alexej Hirsch</p>
-    </div>
-    <div class="col-md-6 col-sm-6"> 
-      <ul class="footer-menu">
-        <li><a href="/Imprint.aspx"><%=Resources.Language.Imprint_Title %></a></li>
-      </ul>
-    </div>
-  </div>
+  {% include footer.html %}
 
 </div>
-<!-- End: Footer -->
