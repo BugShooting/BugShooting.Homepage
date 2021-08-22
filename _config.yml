@@ -5,6 +5,9 @@ description: Screen Capture Software for Bug Tracking and Image Sharing
 baseurl: "/test.github.io"
 url: "https://alexejhirsch.github.io"
 
+docs_url: https://docs.bugshooting.com
+translate_url: http://translate.bugshooting.com
+
 # Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
