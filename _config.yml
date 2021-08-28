@@ -7,6 +7,7 @@ url: "https://alexejhirsch.github.io"
 
 docs_url: https://docs.bugshooting.com
 translate_url: http://translate.bugshooting.com
+download_url: https://services.bugshooting.com/info/bugshooting.exe
 
 # Build settings
 markdown: kramdown
