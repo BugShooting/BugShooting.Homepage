@@ -3,7 +3,7 @@ layout: page
 permalink: /releasenotes/
 ---
 
-<script\>
+<script type="text/javascript">
 
   const response = new XMLHttpRequest();
   response.open("GET", "https://services.bugshooting.com/rest/releasenotes.md");
@@ -13,7 +13,7 @@ permalink: /releasenotes/
      document.getElementById("releasenotes").textContent = response.response)
   }
   
-</script\>
+</script>
 
 # Release Notes
 
