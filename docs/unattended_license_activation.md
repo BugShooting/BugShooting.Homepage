@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Unattended License Activation
 
 Bug Shooting application also supports an unattended activation of the license. This is usefull for application deployment in conjunction with a volume license.
