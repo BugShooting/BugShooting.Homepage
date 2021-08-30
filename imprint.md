@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Imprint
 permalink: /imprint/
 ---
+
+# Imprint
 
 ## 1. Content
 The author reserves the right not to be responsible for the topicality, correctness, completeness or quality of the information provided. Liability claims regarding damage caused by the use of any information provided, including any kind of information which is incomplete or incorrect, will therefore be rejected.
