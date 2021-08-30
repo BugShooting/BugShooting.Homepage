@@ -1,7 +1,8 @@
 ---
 layout: page
-title: License Activation
 permalink: /activation/
 ---
+
+# License Activation
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
