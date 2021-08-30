@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Silent Installation
 
 Bug Shooting installer supports silent installation.
