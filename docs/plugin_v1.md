@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Output API - Version 1
 
 > This version will be removed in the future.
