@@ -1,8 +1,9 @@
 ---
 layout: page
-title: License Agreement
 permalink: /agreement/
 ---
+
+# License Agreement
 
 Alexej Hirsch  
 Parkstr. 18 H  
