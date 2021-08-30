@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Plugin API - Version 3
 
 * [Introduction](#introduction)
