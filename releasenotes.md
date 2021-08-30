@@ -5,12 +5,12 @@ permalink: /releasenotes/
 
 <script type="text/javascript">
 
-  const response = new XMLHttpRequest();
-  response.open("GET", "https://services.bugshooting.com/rest/releasenotes.md");
-  response.send();
+  const request = new XMLHttpRequest();
+  request.open("GET", "https://services.bugshooting.com/rest/releasenotes.md");
+  request.send();
 
-  response.onload = (e) => {
-     document.getElementById("releasenotes").textContent = response.response)
+  request.onload = (e) => {
+     document.getElementById("releasenotes").textContent = request.response;
   }
   
 </script>
