@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Buy For Comercial Usage
 permalink: /buy/
 ---
+
+# Buy For Comercial Usage
 
 {% for price in site.data.prices %}
 
