@@ -7,7 +7,7 @@ permalink: /releasenotes/
 
   const request = new XMLHttpRequest();
     
-  request.open("GET", "https://services.bugshooting.com/rest/releasenotes.md");
+  request.open("GET", "https://services.bugshooting.com/rest/releasenotes.html");
   request.send();
 
   request.onload = (e) => {
