@@ -11,11 +11,11 @@ permalink: /releasenotes/
   request.send();
 
   request.onload = (e) => {
-     document.getElementById("releasenotes").textContent = request.response;
+     document.getElementById("releasenotes").innerHtml = request.response;
   }
   
 </script>
 
 # Release Notes
 
-<span id="releasenotes"></span>
+<div id="releasenotes" />
