@@ -4,7 +4,7 @@ layout: page
 
 # Output API - Version 1
 
-> This version will be removed in the future.
+> This version is deprecated and will be removed in the future.
 
 ## Introduction
 Bug Shooting provides an API to create custom Outputs. You can use the API to create your own Outputs which are not supported by Bug Shooting yet. The API is written in .NET 2.0 so you can create Outputs by using C# or VB.NET. 
