@@ -11,7 +11,7 @@ permalink: /releasenotes/
   request.send();
 
   request.onload = (e) => {
-     document.getElementById("releasenotes").innerHtml = request.response;
+     document.getElementById("releasenotes").innerHTML = request.response;
   }
   
 </script>
