@@ -18,4 +18,6 @@ permalink: /releasenotes/
 
 # Release Notes
 
-<div id="releasenotes" />
+<div id="releasenotes">
+  <div style="height:800px">Loading...</div>
+</div>
