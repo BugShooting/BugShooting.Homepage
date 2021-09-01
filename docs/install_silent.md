@@ -34,8 +34,11 @@ Multi user installation (e.g. for use with Remote Desktop Services). 1=yes, 0=no
 
 Bug Shooting uninstaller supports silent uninstallation.
 
-**/?, /HELP** | Shows available command line switches.
-**/SILENT** | Run a silent uninstallation
+**/?, /HELP**  
+Shows available command line switches.  
+
+**/SILENT**  
+Run a silent uninstallation.  
 
 ## Example
 
