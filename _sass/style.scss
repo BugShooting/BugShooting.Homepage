@@ -12,9 +12,10 @@ ul {
     padding: 0;
     list-style: none;
 }
-a:hover, a:focus, a:active, a:visited {
-    text-decoration: none !important;
-}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 /* Buttons override */
 .btn {
