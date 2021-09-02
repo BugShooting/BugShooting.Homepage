@@ -1,8 +1,14 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     font-family: 'Dosis', sans-serif;
     color: #404142;
     font-size: 18px;
     letter-spacing: 0.8px;
+      /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
