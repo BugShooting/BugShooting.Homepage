@@ -12,11 +12,6 @@ ul {
     padding: 0;
     list-style: none;
 }
-a {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
 a:hover, a:focus, a:active, a:visited {
     text-decoration: none !important;
 }
