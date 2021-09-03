@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /buy/
+permalink: /pricing/
 ---
 
 # Buy For Comercial Usage
