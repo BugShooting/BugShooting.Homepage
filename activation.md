@@ -10,7 +10,7 @@ Here you can activate your Bug Shooting license.
 3. Save the license file to your computer.  
 4. Open the saved license file in Bug Shooting activation wizart to complete the activation process.  
 
-<form method="POST" action="https://services.bugshooting.com/rest/freelicense">
+<form method="POST" action="https://services.bugshooting.com/rest/activatelicense">
   <div class="row mb-3">
     <label for="activationfile" class="col-sm-2 col-form-label">Activation File</label>
     <div class="col-sm-10">
