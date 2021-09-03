@@ -18,11 +18,11 @@ The free license is only usable in a personal and non-commercial context. Commer
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">E-Mail</label>
-    <input class="form-control" type="text" required name="email">
+    <input class="form-control" type="email" required name="email">
   </div>
   <div class="mb-3">
     <label for="email2" class="form-label">Retype E-Mail</label>
-    <input class="form-control" type="text" required name="email2"
+    <input class="form-control" type="email" required name="email2"
   </div>
   <div class="mb-3">
     <label for="country" class="form-label">Country</label>
