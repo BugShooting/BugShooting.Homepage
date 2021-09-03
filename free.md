@@ -9,32 +9,40 @@ The free license is only usable in a personal and non-commercial context. Commer
 
 <form method="POST" action="https://Services.bugshooting.com/rest/freelicense">
   <div class="mb-3">
-    <input class="form-control" type="text" required name="firstname" placeholder="First Name">
+    <label for="firstname" class="form-label">First Name</label>
+    <input class="form-control" type="text" required name="firstname" >
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="lastname" placeholder="Last Name">
+    <label for="lastname" class="form-label">Last Name</label>
+    <input class="form-control" type="text" required name="lastname">
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="email" placeholder="E-Mail">
+    <label for="email" class="form-label">E-Mail</label>
+    <input class="form-control" type="text" required name="email">
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="email2" placeholder="Retype E-Mail">
+    <label for="email2" class="form-label">Retype E-Mail</label>
+    <input class="form-control" type="text" required name="email2"
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="country" placeholder="Country">
+    <label for="country" class="form-label">Country</label>
+    <input class="form-control" type="text" required name="country">
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="city" placeholder="City">
+    <label for="city" class="form-label">City</label>
+    <input class="form-control" type="text" required name="city">
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="zip" placeholder="ZIP / Postal Code">
+    <label for="zip" class="form-label">ZIP / Postal Code</label>
+    <input class="form-control" type="text" required name="zip">
   </div>
   <div class="mb-3">
-    <input class="form-control" type="text" required name="street" placeholder="Street Address">
+    <label for="street" class="form-label">Street Address</label>
+    <input class="form-control" type="text" required name="street">
   </div>
   <div class="mb-3 form-check">
-    <input class="form-check-input" type="checkbox" id="AgreementCheckbox" required name="agreement">
-    <label class="form-check-label" for="AgreementCheckbox">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
+    <input class="form-check-input" type="checkbox" required name="agreement">
+    <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
 </form>
