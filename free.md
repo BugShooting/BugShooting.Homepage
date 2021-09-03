@@ -11,43 +11,43 @@ The free license is only usable in a personal and non-commercial context. Commer
   <div class="row mb-3">
     <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="firstname" >
+      <input class="form-control" type="text" required name="firstname" maxlength="50" >
     </div>
   </div>
   <div class="row mb-3">
     <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="lastname">
+      <input class="form-control" type="text" required name="lastname" maxlength="50">
     </div>
   </div>
   <div class="row mb-3">
     <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
     <div class="col-sm-10">
-      <input class="form-control" type="email" required name="email">
+      <input class="form-control" type="email" required name="email" maxlength="100">
     </div>
   </div>
   <div class="row mb-3">
     <label for="country" class="col-sm-2 col-form-label">Country</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="country">
+      <input class="form-control" type="text" required name="country" maxlength="50">
     </div>
   </div>
   <div class="row mb-3">
     <label for="city" class="col-sm-2 col-form-label">City</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="city">
+      <input class="form-control" type="text" required name="city" maxlength="100">
     </div>
   </div>
   <div class="row mb-3">
     <label for="zip" class="col-sm-2 col-form-label">ZIP / Postal Code</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="zip">
+      <input class="form-control" type="text" required name="zip" maxlength="20">
     </div>
   </div>
   <div class="row mb-3">
     <label for="street" class="col-sm-2 col-form-label">Street Address</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" required name="street">
+      <input class="form-control" type="text" required name="street" maxlength="100">
     </div>
   </div>
   <div class="row mb-3">
