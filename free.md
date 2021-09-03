@@ -34,7 +34,7 @@ The free license is only usable in a personal and non-commercial context. Commer
   </div>
   <div class="mb-3 form-check">
     <input class="form-check-input" type="checkbox" id="AgreementCheckbox" required name="agreement">
-    <label class="form-check-label" for="AgreementCheckbox">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement">License Agreement</a></label>
+    <label class="form-check-label" for="AgreementCheckbox">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
 </form>
