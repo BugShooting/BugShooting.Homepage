@@ -51,7 +51,7 @@ The free license is only usable in a personal and non-commercial context. Commer
     </div>
   </div>
   <div class="row mb-3">
-    <div class="col-sm-10">
+    <div class="col-sm-10  offset-sm-2">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" required name="agreement">
         <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
