@@ -16,7 +16,7 @@ The free license is only usable in a personal and non-commercial context. Commer
   <input class="form-control" type="text" required name="city" placeholder="City">
   <input class="form-control" type="text" required name="zip" placeholder="ZIP / Postal Code">
   <input class="form-control" type="text" required name="street" placeholder="Street Address">
-  <input class="form-control" type="checkbox" required name="agreement">
-  <label for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement">License Agreement</a></label>
+  <input class="form-check-input" type="checkbox" id="AgreementCheckbox" required name="agreement">
+  <label class="form-check-label" for="AgreementCheckbox">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement">License Agreement</a></label>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
 </form>
