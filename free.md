@@ -7,7 +7,7 @@ permalink: /free/
 
 The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a [commercial license]({{ site.baseurl }}/pricing).
 
-<form name="freeLicenseForm" method="POST" action="https://services.bugshooting.com/rest/freelicense" onload="document.freeLicenseForm.reset()">
+<form method="POST" action="https://services.bugshooting.com/rest/freelicense">
   <div class="row mb-3">
     <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
     <div class="col-sm-10">
