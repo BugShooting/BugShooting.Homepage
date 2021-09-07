@@ -26,6 +26,8 @@ The free license is only usable in a personal and non-commercial context. Commer
   <input type="hidden" name="successurl" value="{{ site.url }}{{ site.baseurl }}/freesuccess">
   <input type="hidden" name="failurl" value="{{ site.url }}{{ site.baseurl }}/free">
   <div class="row mb-3">
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
+    <div class="form-group">
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
+    </div>
   </div>
 </form>
