@@ -9,7 +9,10 @@ The free license is only usable in a personal and non-commercial context. Commer
 
 <form method="POST" action="https://services.bugshooting.com/rest/freelicense">
   <div class="row mb-3">
-    <input class="form-control" type="email" placeholder="Email" required name="email" maxlength="100">
+    <div class="form-group">
+      <label for="activationfile" class="col-sm-2 col-form-label">Email</label>
+      <input class="form-control" type="email" placeholder="Email" required name="email" maxlength="100">
+    </div>
   </div>
   <div class="row mb-3">
     <div class="form-check">
