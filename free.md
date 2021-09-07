@@ -8,11 +8,10 @@ permalink: /free/
 The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a [commercial license]({{ site.baseurl }}/pricing).
 
 <form method="POST" action="https://services.bugshooting.com/rest/freelicense">
-  <div class="form-group">
-    <label for="email">E-Mail</label>
-    <input class="form-control" type="email" required name="email" maxlength="100">
+  <div class="row mb-3">
+    <input class="form-control" type="email" placeholder="E-Mail" required name="email" maxlength="100">
   </div>
-  <div class="form-group">
+  <div class="row mb-3">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" required name="agreement">
       <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
