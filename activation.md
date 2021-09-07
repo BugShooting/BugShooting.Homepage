@@ -13,14 +13,10 @@ Here you can activate your Bug Shooting license.
 
 <form method="POST" action="https://services.bugshooting.com/rest/activatelicense">
   <div class="row mb-3">
-    <label for="activationfile" class="col-sm-2 col-form-label">Activation File</label>
-    <div class="col-sm-10">
-      <input class="form-control" type="file" required name="activationfile" >
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="activationfile">
+      <label class="custom-file-label" for="activationfile">Choose file</label>
     </div>
   </div>
-  <div class="row mb-3">
-    <div class="col-sm-10  offset-sm-2">
-       <button class="btn btn-lg btn-primary btn-block" type="submit">Create license file</button>
-    </div>
-  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Create license file</button>
 </form>
