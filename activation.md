@@ -14,12 +14,8 @@ Here you can activate your Bug Shooting license.
   <div class="row mb-3">
     <div class="form-group">
       <label for="activationfile" class="col-sm-2 col-form-label">Activation File</label>
-      <div class="col-sm-10">
-        <input class="form-control" type="file" required name="activationfile" >
-      </div>
+      <input class="form-control" type="file" required name="activationfile" >
     </div>
   </div>
-  <div class="row mb-3">
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Create license file</button>
-  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Create license file</button>
 </form>
