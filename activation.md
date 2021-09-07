@@ -11,10 +11,11 @@ Here you can activate your Bug Shooting license.
 4. Open the saved license file in Bug Shooting activation wizart to complete the activation process.  
 
 <form method="POST" action="https://services.bugshooting.com/rest/activatelicense">
-<div class="custom-file">
-  <input type="file" class="custom-file-input" id="customFile" />
-  <label class="custom-file-label" for="customFile">Choose file</label>
-</div>
-
+  <div class="form-group">
+    <label for="activationfile" class="col-sm-2 col-form-label">Activation File</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="file" required name="activationfile" >
+    </div>
+  </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Create license file</button>
 </form>
