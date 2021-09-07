@@ -14,11 +14,9 @@ The free license is only usable in a personal and non-commercial context. Commer
       <input class="form-control" type="email" placeholder="Email" required name="email" maxlength="100">
     </div>
   </div>
-  <div class="row mb-3">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" required name="agreement">
-      <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
-    </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" required name="agreement">
+    <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
   </div>
   <input type="hidden" name="language" value="en-US">
   <input type="hidden" name="successurl" value="{{ site.url }}{{ site.baseurl }}/freesuccess">
