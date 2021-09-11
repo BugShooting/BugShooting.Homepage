@@ -28,11 +28,6 @@ permalink: /activation/
   </form>
   
 </div>
-  
-<div id="resultsuccess" style="display:none">
- <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-</div>
 
 <div id="resultfailed" style="display:none">
   <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
@@ -45,15 +40,7 @@ permalink: /activation/
   
   form.addEventListener('submit', (event) => {
 
-    // disable default action
-    event.preventDefault();
-
     var request = new XMLHttpRequest();
-  
-    request.addEventListener('load', function( event ) {
-      document.getElementById("requestform").style.display = "none";
-      document.getElementById("resultsuccess").style.display = "block";
-    } );
   
     request.addEventListener('error', function( event ) {
       document.getElementById("requestform").style.display = "none";
