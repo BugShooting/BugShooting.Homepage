@@ -16,21 +16,20 @@ permalink: /free/
 
   request.onload = (e) => {
   
-    var requestform = document.getElementById("requestform");
-    var result = document.getElementById("result");
-  
-    requestform.style.display = "none";
-  
     if (request.response === 0) {
+     
       // success
-      result.style.display = "block";
-      
-    } else {
-      // failed
-      result.style.display = "block";
-    }
+      document.getElementById("requestform").style.display = "none";
+      document.getElementById("resultsuccess").style.display = "block";
   
-     document.getElementById("releasenotes").innerHTML = request.response;
+    } else {
+  
+      // failed
+      document.getElementById("requestform").style.display = "none";
+      document.getElementById("resultfailed").style.display = "block";
+  
+    }
+ 
   }
   
 </script>
