@@ -55,7 +55,7 @@ permalink: /activation/
     request.addEventListener('error', function( event ) {
       form.reset();
       document.getElementById("errorMessage").style.display = "block";
-      document.getElementById("errorMessage").innerText = request.statusText;
+      document.getElementById("errorMessage").innerText = request.response.statusText;
     } );
 
     request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
