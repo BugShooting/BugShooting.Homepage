@@ -37,7 +37,7 @@ permalink: /activation/
     // disable default action
     event.preventDefault();
   
-    var request = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
   
     xhr.onload = function () {
       if (xhr.readyState === xhr.DONE) {
@@ -50,7 +50,7 @@ permalink: /activation/
           var tempEl = document.createElement("a");
           document.body.appendChild(tempEl);
           tempEl.style = "display: none";
-          url = window.URL.createObjectURL(request.response);
+          url = window.URL.createObjectURL(xhr.response);
           tempEl.href = url;
           tempEl.download = 'License.xml';
           tempEl.click();
@@ -60,19 +60,19 @@ permalink: /activation/
    
           // show error message
           document.getElementById("errorMessage").style.display = "block";
-          document.getElementById("errorMessage").innerText = request.statusText; 
+          document.getElementById("errorMessage").innerText = xhr.statusText; 
   
         }
       }
     };
   
-    request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
-    request.responseType = "blob";
+    xhr.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
+    xhr.responseType = "blob";
   
     var data = new FormData();
     data.append('activationfile', document.getElementById("activationfile").files[0]);
   
-    request.send(data);
+    xhr.send(data);
         
   });
  
