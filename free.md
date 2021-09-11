@@ -51,33 +51,26 @@ permalink: /free/
     // disable default action
     event.preventDefault();
 
+    var request = new XMLHttpRequest();
+  
+    request.addEventListener( 'load', function( event ) {
+      document.getElementById("requestform").style.display = "none";
+      document.getElementById("resultsuccess").style.display = "block";
+    } );
+  
+    request.addEventListener(' error', function( event ) {
+      document.getElementById("requestform").style.display = "none";
+      document.getElementById("resultfailed").style.display = "block";
+    } );
+  
+    request.open("POST", "http://localhost:23423/rest/freelicense");
+  
     var data = new FormData();
     data.append('email', document.getElementById("email").value);
     data.append('language', 'en-US');
-
-    var request = new XMLHttpRequest();
   
-    request.open("POST", "https://services.bugshooting.com/rest/freelicense");
     request.send(data);
-
-    request.onload = (e) => {
-
-      if (request.response === '0') {
-
-        // success
-        document.getElementById("requestform").style.display = "none";
-        document.getElementById("resultsuccess").style.display = "block";
-
-      } else {
-
-        // failed
-        document.getElementById("requestform").style.display = "none";
-        document.getElementById("resultfailed").style.display = "block";
-
-      }
-
-    }
-    
+        
 });
  
 </script>
