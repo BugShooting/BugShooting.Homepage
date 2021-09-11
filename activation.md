@@ -40,6 +40,9 @@ permalink: /activation/
   
   form.addEventListener('submit', (event) => {
 
+    // disable default action
+    event.preventDefault();
+  
     var request = new XMLHttpRequest();
     
     request.addEventListener('error', function( event ) {
