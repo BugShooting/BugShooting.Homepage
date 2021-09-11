@@ -42,34 +42,31 @@ permalink: /activation/
   const form = document.getElementById('submitform');
   
   form.addEventListener('submit', (event) => {
-
     // disable default action
     event.preventDefault();
   
     var request = new XMLHttpRequest();
-  
+
     request.addEventListener('load', function( event ) {
       form.reset();
-	
-      document.getElementById("errorMessage").style.display = "none";
 
-      var tempEl = document.createElement("a");
-      document.body.appendChild(tempEl);
-      tempEl.style = "display: none";
+		  var tempEl = document.createElement("a");
+    	document.body.appendChild(tempEl);
+    	tempEl.style = "display: none";
       url = window.URL.createObjectURL(request.response);
       tempEl.href = url;
       tempEl.download = 'License.xml';
       tempEl.click();
-      window.URL.revokeObjectURL(url);
-  
+		  window.URL.revokeObjectURL(url);
+
     } );
-  
+
     request.addEventListener('error', function( event ) {
       form.reset();
-      document.getElementById("errorMessage").style.display = "block";
-      document.getElementById("errorMessage").innerText = "hallo welt!";
+      document.getElementById("requestform").style.display = "none";
+      document.getElementById("resultfailed").style.display = "block";
     } );
-  
+
     request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
     request.responseType = "blob";
   
