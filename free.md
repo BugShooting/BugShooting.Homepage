@@ -11,14 +11,15 @@ permalink: /free/
     data.append('email', document.getElementById("email").value);
     data.append('language', 'en-US');
 
-    const request = new XMLHttpRequest();
-
+    var request = new XMLHttpRequest();
+  
     request.open("POST", "https://services.bugshooting.com/rest/freelicense");
+    request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     request.send(data);
 
     request.onload = (e) => {
 
-      if (request.response === 0) {
+      if (request.response === '0') {
 
         // success
         document.getElementById("requestform").style.display = "none";
