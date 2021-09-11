@@ -8,7 +8,7 @@ permalink: /free/
 The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a <a href="{{ site.baseurl }}/pricing">commercial license</a>.  
 
 <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none"></div>
-<div id="successMessage" class="alert alert-success " role="alert">
+<div id="successMessage" class="alert alert-success " role="alert" style="display:none">
   You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email.
 </div> 
  
