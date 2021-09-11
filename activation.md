@@ -59,7 +59,7 @@ permalink: /activation/
       document.getElementById("resultfailed").style.display = "block";
     } );
   
-    request.open("POST", "http://localhost:23423//rest/activatelicense", true);
+    request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
   
     var data = new FormData();
     data.append('activationfile', document.getElementById("activationfile").files[0]);
