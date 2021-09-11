@@ -63,7 +63,7 @@ permalink: /free/
       document.getElementById("resultfailed").style.display = "block";
     } );
   
-    request.open("POST", "http://localhost:23423/rest/freelicense");
+    request.open("POST", "http://localhost:23423/rest/freelicense", true);
   
     var data = new FormData();
     data.append('email', document.getElementById("email").value);
