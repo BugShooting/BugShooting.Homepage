@@ -37,7 +37,7 @@ permalink: /activation/
     event.preventDefault();
   
     var request = new XMLHttpRequest();
-
+  
     request.addEventListener('load', function( event ) {
       form.reset();
 
@@ -55,7 +55,7 @@ permalink: /activation/
     request.addEventListener('error', function( event ) {
       form.reset();
       document.getElementById("errorMessage").style.display = "block";
-      document.getElementById("errorMessage").innerText = request.response.statusText;
+      document.getElementById("errorMessage").innerText = request.statusText;
     } );
 
     request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
