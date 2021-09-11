@@ -34,7 +34,9 @@ permalink: /free/
 
 <div id="resultsuccess" style="display:none">
  <h1>Thank You</h1>
- You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email. 
+ <div class="alert alert-success " role="alert">
+   You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email.
+ </div> 
 </div>
 
 <div id="resultfailed" style="display:none">
