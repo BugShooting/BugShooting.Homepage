@@ -6,7 +6,7 @@ permalink: /free/
 <div id="requestform">
 
   <h1>Request Free License</h1>
-  The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a <a href="{{ site.baseurl }}/pricing">commercial license</a>.
+  <p>The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a <a href="{{ site.baseurl }}/pricing">commercial license</a>.</p>
 
   <form id="submitform">
     <div class="row mb-3">
