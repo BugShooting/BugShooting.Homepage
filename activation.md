@@ -12,7 +12,7 @@ permalink: /activation/
   <li>Open the saved license file in Bug Shooting activation wizard to complete the activation process.</li>
 </ol>
 
-<div id="errorMessage" class="alert alert-danger" role="alert" style="display:none">ERROR</div>
+<div id="errorMessage" class="alert alert-danger" role="alert" style="display:none"></div>
 
 <form id="submitform">
   <div class="row mb-3">
@@ -55,7 +55,7 @@ permalink: /activation/
     request.addEventListener('error', function( event ) {
       form.reset();
       document.getElementById("errorMessage").style.display = "block";
-      document.getElementById("resultfailed").innerText = "Hallo Jennifer!";
+      document.getElementById("errorMessage").innerText = "Hallo Jennifer!";
     } );
 
     request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
