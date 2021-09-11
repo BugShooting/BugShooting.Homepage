@@ -53,12 +53,12 @@ permalink: /free/
 
     var request = new XMLHttpRequest();
   
-    request.addEventListener( 'load', function( event ) {
+    request.addEventListener('load', function( event ) {
       document.getElementById("requestform").style.display = "none";
       document.getElementById("resultsuccess").style.display = "block";
     } );
   
-    request.addEventListener(' error', function( event ) {
+    request.addEventListener('error', function( event ) {
       document.getElementById("requestform").style.display = "none";
       document.getElementById("resultfailed").style.display = "block";
     } );
