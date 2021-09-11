@@ -12,8 +12,9 @@ permalink: /activation/
   <li>Open the saved license file in Bug Shooting activation wizard to complete the activation process.</li>
 </ol>
 
+<div id="errorMessage" class="alert alert-danger" role="alert" style="display:none" />
+
 <form id="submitform">
-  <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none" />
   <div class="row mb-3">
     <div class="form-group">
       <label for="activationfile" class="col-sm-2 col-form-label">Activation File</label>
