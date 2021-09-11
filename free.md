@@ -71,6 +71,6 @@ permalink: /free/
   
     request.send(data);
         
-});
+  });
  
 </script>
