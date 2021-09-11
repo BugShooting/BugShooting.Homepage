@@ -5,8 +5,13 @@ permalink: /free/
 
 <script type="text/javascript">
 
-  function sendRequest() {
+  const form = document.getElementById('submitform');
   
+  form.addEventListener('submit', (event) => {
+
+    // disable default action
+    event.preventDefault();
+
     var data = new FormData();
     data.append('email', document.getElementById("email").value);
     data.append('language', 'en-US');
@@ -34,9 +39,9 @@ permalink: /free/
       }
 
     }
-
-  }
-  
+    
+});
+ 
 </script>
 
 <div id="requestform">
@@ -44,7 +49,7 @@ permalink: /free/
   <h1>Request Free License</h1>
   The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a <a href="{{ site.baseurl }}/pricing">commercial license</a>.
 
-  <form>
+  <form id="submitform">
     <div class="row mb-3">
       <div class="form-group">
         <label for="activationfile" class="col-sm-2 col-form-label">Email</label>
@@ -61,7 +66,7 @@ permalink: /free/
     </div>
     <div class="row mb-3">
       <div class="form-group">
-        <button class="btn btn-lg btn-primary btn-block" type="submit" onClick="sendRequest()">Request Free License</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
       </div>
     </div>
   </form>
