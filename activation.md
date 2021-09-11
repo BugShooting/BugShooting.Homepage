@@ -47,6 +47,16 @@ permalink: /activation/
   
     request.addEventListener('load', function( event ) {
       form.reset();
+
+		  var tempEl = document.createElement("a");
+    	document.body.appendChild(tempEl);
+    	tempEl.style = "display: none";
+      url = window.URL.createObjectURL(request.response);
+      tempEl.href = url;
+      tempEl.download = 'License.xml';
+      tempEl.click();
+		  window.URL.revokeObjectURL(url);
+  
     } );
   
     request.addEventListener('error', function( event ) {
