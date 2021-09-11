@@ -47,7 +47,7 @@ permalink: /activation/
       document.getElementById("resultfailed").style.display = "block";
     } );
   
-    request.open("GET", "https://services.bugshooting.com/rest/activatelicense", true);
+    request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
     request.responseType = 'blob';
   
     var data = new FormData();
