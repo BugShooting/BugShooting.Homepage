@@ -42,12 +42,26 @@ permalink: /activation/
 
     var request = new XMLHttpRequest();
   
+    request.addEventListener('load', function( event ) {
+
+      var blob = new Blob([this.response], {type: 'application/octet-stream'});
+      let a = document.createElement("a");
+      a.style = "display: none";
+      document.body.appendChild(a);
+      let url = window.URL.createObjectURL(blob);
+      a.href = url;
+      a.download = 'License.xml';
+      a.click();
+      window.URL.revokeObjectURL(url);
+  
+    } );
+  
     request.addEventListener('error', function( event ) {
       document.getElementById("requestform").style.display = "none";
       document.getElementById("resultfailed").style.display = "block";
     } );
   
-    request.open("GET", "https://services.bugshooting.com/rest/activatelicense", true);
+    request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
   
     var data = new FormData();
     data.append('activationfile', document.getElementById("activationfile").files[0]);
