@@ -57,7 +57,7 @@ permalink: /free/
 
     var request = new XMLHttpRequest();
   
-    request.open("POST", "http://localhost:23423/rest/freelicense");
+    request.open("POST", "https://services.bugshooting.com/rest/freelicense");
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     request.send(data);
 
