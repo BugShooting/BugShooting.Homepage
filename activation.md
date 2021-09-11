@@ -46,6 +46,9 @@ permalink: /activation/
   
         if (xhr.status === 200) {
   
+          // hide error message
+          document.getElementById("errorMessage").style.display = "none";
+  
           // download license file
           var tempEl = document.createElement("a");
           document.body.appendChild(tempEl);
