@@ -44,8 +44,13 @@ permalink: /activation/
     event.preventDefault();
   
     var request = new XMLHttpRequest();
-    
+  
+    request.addEventListener('load', function( event ) {
+      form.reset();
+    } );
+  
     request.addEventListener('error', function( event ) {
+      form.reset();
       document.getElementById("requestform").style.display = "none";
       document.getElementById("resultfailed").style.display = "block";
     } );
