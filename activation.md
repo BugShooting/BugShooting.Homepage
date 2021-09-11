@@ -41,21 +41,21 @@ permalink: /activation/
     request.addEventListener('load', function( event ) {
       form.reset();
 
-		  var tempEl = document.createElement("a");
-    	document.body.appendChild(tempEl);
-    	tempEl.style = "display: none";
+      var tempEl = document.createElement("a");
+      document.body.appendChild(tempEl);
+      tempEl.style = "display: none";
       url = window.URL.createObjectURL(request.response);
       tempEl.href = url;
       tempEl.download = 'License.xml';
       tempEl.click();
-		  window.URL.revokeObjectURL(url);
+      window.URL.revokeObjectURL(url);
 
     } );
 
     request.addEventListener('error', function( event ) {
       form.reset();
       document.getElementById("errorMessage").style.display = "block";
-      document.getElementById("errorMessage").innerText = "Hallo Jennifer!";
+      document.getElementById("errorMessage").innerText = request.statusText;
     } );
 
     request.open("POST", "https://services.bugshooting.com/rest/activatelicense", true);
