@@ -36,8 +36,7 @@ permalink: /free/
 
 <div id="requestform">
 
-  # Request Free License
-
+  <h1>Request Free License</h1>
   The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a [commercial license]({{ site.baseurl }}/pricing).
 
   <form>
@@ -64,10 +63,10 @@ permalink: /free/
   
 </div>
 <div id="resultsuccess" style="display:none">
- # Thank You
+ <h1>Thank You</h1>
  You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email. 
 </div>
 <div id="resultfailed" style="display:none">
-  # Oops!
+  <h1>Oops!</h1>
   Something went wrong.
 </div>
