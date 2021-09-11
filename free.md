@@ -5,31 +5,35 @@ permalink: /free/
 
 <script type="text/javascript">
 
-  var data = new FormData();
-  data.append('email', document.getElementById("email").value);
-  data.append('language', 'en-US');
+  function sendRequest() {
   
-  const request = new XMLHttpRequest();
-    
-  request.open("POST", "https://services.bugshooting.com/rest/freelicense");
-  request.send(data);
+    var data = new FormData();
+    data.append('email', document.getElementById("email").value);
+    data.append('language', 'en-US');
 
-  request.onload = (e) => {
-  
-    if (request.response === 0) {
-     
-      // success
-      document.getElementById("requestform").style.display = "none";
-      document.getElementById("resultsuccess").style.display = "block";
-  
-    } else {
-  
-      // failed
-      document.getElementById("requestform").style.display = "none";
-      document.getElementById("resultfailed").style.display = "block";
-  
+    const request = new XMLHttpRequest();
+
+    request.open("POST", "https://services.bugshooting.com/rest/freelicense");
+    request.send(data);
+
+    request.onload = (e) => {
+
+      if (request.response === 0) {
+
+        // success
+        document.getElementById("requestform").style.display = "none";
+        document.getElementById("resultsuccess").style.display = "block";
+
+      } else {
+
+        // failed
+        document.getElementById("requestform").style.display = "none";
+        document.getElementById("resultfailed").style.display = "block";
+
+      }
+
     }
- 
+
   }
   
 </script>
@@ -56,7 +60,7 @@ permalink: /free/
     </div>
     <div class="row mb-3">
       <div class="form-group">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onClick="sendRequest()">Request Free License</button>
       </div>
     </div>
   </form>
