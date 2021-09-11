@@ -13,6 +13,7 @@ permalink: /activation/
 </ol>
 
 <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none"></div>
+<div id="successMessage" class="alert alert-success " role="alert" style="display:none">License file created successfully.</div>
 
 <form id="submitform">
   <div class="row mb-3">
@@ -46,8 +47,10 @@ permalink: /activation/
   
         if (xhr.status === 200) {
   
-          // hide error message
+          // show success message
+          document.getElementById("successMessage").style.display = "block";
           document.getElementById("errorMessage").style.display = "none";
+          form.style.display = "none";
   
           // download license file
           var tempEl = document.createElement("a");
@@ -62,6 +65,7 @@ permalink: /activation/
         } else {
    
           // show error message
+          document.getElementById("successMessage").style.display = "none"; 
           document.getElementById("errorMessage").style.display = "block";
           document.getElementById("errorMessage").innerText = xhr.statusText; 
   
