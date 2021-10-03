@@ -27,10 +27,10 @@
 
         $.i18n().locale = 'de';
 
-        $.i18n().load('{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale);
+        $.i18n().load('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale);
             
         $('body').i18n(); 
-        
+
       });
 
     </script>
