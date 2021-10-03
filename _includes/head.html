@@ -30,9 +30,13 @@
         alert(JSON.stringify(json));
 
         $.i18n().load(json, 'de');
+
+        alert('2' + $.i18n( 'capture' ))
+
       });
 
-      alert($.i18n( 'capture' ))
+      alert('1' + $.i18n( 'capture' ))
+
     </script>
     
 </head>
