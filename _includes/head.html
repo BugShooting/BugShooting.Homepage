@@ -26,16 +26,8 @@
       $.i18n().locale = 'de';
 
       $.i18n().load( {
-            de: {	
-              "capture": "Aufnehmen",
-              "edit": "Bearbeiten",
-              "share": "Teilen"
-            },
-            en: {	
-              "capture": "Capture",
-              "edit": "Edit",
-              "share": "Share"
-            }
+            de: '{{ site.baseurl }}/jquery.i18n/languages/de.json',
+            en: '{{ site.baseurl }}/jquery.i18n/languages/en.json'
       });
 
       alert($.i18n( 'capture' ))
