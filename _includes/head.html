@@ -23,6 +23,10 @@
     
     <script>
       $.i18n().load('{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale);
+
+      var testmessage = $.i18n('edit');
+      alert(testmessage);
+
     </script>
     
 </head>
