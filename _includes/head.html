@@ -25,17 +25,7 @@
 
       $.i18n().locale = 'de';
 
-      $.getJSON('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', function(json) {
-
-        alert(JSON.stringify(json));
-
-        $.i18n().load(json, 'de');
-
-        alert('2' + $.i18n( 'capture' ))
-
-      });
-
-      alert('1' + $.i18n( 'capture' ))
+      $.i18n().load('{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale);
 
     </script>
     
