@@ -27,7 +27,7 @@
 
       $.getJSON('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', function(json) {
 
-        alert(json);
+        alert(JSON.stringify(json));
 
         $.i18n().load(json, $.i18n().locale);
       });
