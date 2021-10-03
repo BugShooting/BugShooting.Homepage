@@ -21,4 +21,8 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
     
+    <script>
+      i18n.load('i18n/languages/' + i18n.locale + '.json', i18n.locale );
+    </script>
+    
 </head>
