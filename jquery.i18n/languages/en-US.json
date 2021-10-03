@@ -1,4 +1,12 @@
-{
+{	
+	"@metadata": {
+		"authors": [
+			"Alexej Hirsch"
+		],
+		"last-updated": "2019-10-10",
+		"locale": "en-US",
+		"other-metadata": "sample json format"
+	},
 	"capture": "Capture",
 	"edit": "Edit",
 	"share": "Share"
