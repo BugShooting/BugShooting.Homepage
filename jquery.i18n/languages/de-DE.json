@@ -1,12 +1,4 @@
 {	
-	"@metadata": {
-		"authors": [
-			"Alexej Hirsch"
-		],
-		"last-updated": "2019-10-10",
-		"locale": "de-DE",
-		"other-metadata": "sample json format"
-	},
 	"capture": "Aufnehmen",
 	"edit": "Bearbeiten",
 	"share": "Teilen"
