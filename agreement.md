@@ -3,7 +3,7 @@ layout: page
 permalink: /agreement/
 ---
 
-# License Agreement
+<h1 data-i18n="LicenseAgreement">License Agreement</h1>
 
 Alexej Hirsch  
 Parkstr. 18 H  
@@ -37,5 +37,3 @@ Neither licensor nor any vicarious agent and supplier shall be liable for any da
 Licensor may forward the following data from the licensee to his server to verify the license: Name, address and registration key. Licensee is expressly prohibited from transferring data which are not part of the license agreement to himself or others.
 ## 7. Final Provisions
 This agreement shall be governed by the laws of the Federal Republic of Germany. If any of the provisions of this license agreement is, in whole or in part, found to be invalid or incomplete, then the validity of the remaining provisions shall remain unaffected, and the invalid or incomplete provision shall be replaced by such valid provision that comes closest to the economic and legal intent of the invalid provision.
-
-Copyright (C) 2009-2021 Alexej Hirsch
