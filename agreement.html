@@ -7,17 +7,17 @@ permalink: /agreement/
 
     const request = new XMLHttpRequest();
       
-    request.open("GET", "https://services.bugshooting.com/rest/licenseargreement");
+    request.open("GET", "https://services.bugshooting.com/rest/licenseagreement");
     request.send();
   
     request.onload = (e) => {
-       document.getElementById("licenseargreement").innerText = request.response;
+       document.getElementById("licenseagreement").innerText = request.response;
     }
     
 </script>
   
 <h1 data-i18n="LicenseAgreement">License Agreement</h1>
 
-<div id="licenseargreement">
+<div id="licenseagreement">
     <div style="height:800px">Loading...</div>
 </div>
