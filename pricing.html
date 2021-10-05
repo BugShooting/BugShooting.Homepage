@@ -3,7 +3,7 @@ layout: page
 permalink: /pricing/
 ---
 
-# Buy For Comercial Usage
+<h1 data-i18n="BuyForComercial">Buy For Comercial Usage</h1>
 
 {% for price in site.data.prices %}
 
@@ -17,19 +17,19 @@ permalink: /pricing/
     {% if price.price_title == '' %}
 
       <div class="col-md-6">
-        <a class="btn btn-yellow" href="{{ price.purchase_link }}">Purchase</a>
+        <a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
       </div>
     
     {% else %}
 
       <div class="col-md-3">
-        <a class="btn btn-yellow" href="{{ price.purchase_link }}">Purchase</a>
+        <a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
       </div>
       <div class="visible-sm visible-xs">
         <br />
       </div>
       <div class="col-md-5">
-        <a class="btn btn-yellow" href="{{ price.purchase_volume_link }}">Purchase volume license</a>
+        <a class="btn btn-yellow" href="{{ price.purchase_volume_link }}" data-i18n="PurchaseVolume">Purchase volume license</a>
       </div>
     
     {% endif %}
