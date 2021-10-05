@@ -3,19 +3,19 @@ layout: page
 permalink: /free/
 ---
 
-# Request Free License  
+<h1 data-i18n="RequestFreeLicense">Request Free License</h1>
   
 The free license is only usable in a personal and non-commercial context. Commercial use of Bug Shooting requires the purchasing of a <a href="{{ site.baseurl }}/pricing">commercial license</a>.  
 
 <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none"></div>
 <div id="successMessage" class="alert alert-success " role="alert" style="display:none">
-  You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email.
+  <span data-i18n="FreeLicenseSuccess">You will receive your Bug Shooting license by email. Please check your spam folder in case you do not receive the email.</span>
 </div> 
  
 <form id="submitform">
   <div class="row mb-3">
     <div class="form-group">
-      <label for="activationfile" class="col-sm-2 col-form-label">Email</label>
+      <label for="activationfile" class="col-sm-2 col-form-label" data-i18n="Email">Email</label>
       <input class="form-control" type="email" placeholder="Email" required name="email" id="email" maxlength="100">
     </div>
   </div>
@@ -23,21 +23,21 @@ The free license is only usable in a personal and non-commercial context. Commer
     <div class="form-group">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" required name="agreement">
-        <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank">License Agreement</a></label>
+        <label class="form-check-label" for="agreement">Accept Bug Shooting <a href="{{ site.baseurl }}/agreement" target="_blank" >License Agreement</a></label>
       </div>
     </div>
   </div>
   <div class="row mb-3">
     <div class="form-group">
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Request Free License</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" data-i18n="RequestFreeLicense">Request Free License</button>
     </div>
   </div>
 </form>
 
 
 <div id="resultfailed" style="display:none">
-  <h1>Oops!</h1>
-  Something went wrong.
+  <h1 data-i18n="Oops">Oops!</h1>
+  <span data-i18n="SomethingWrong">Something went wrong.</span>
 </div>
 
 <script type="text/javascript">
