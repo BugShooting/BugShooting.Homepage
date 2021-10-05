@@ -15,13 +15,13 @@ permalink: /agreement/
     xhr.send(data);
   
     xhr.onload = (e) => {
-       document.getElementById("licenseagreement").innerText = xhr.response;
+       document.getElementById("agreement").innerText = xhr.response;
     }
     
 </script>
   
 <h1 data-i18n="LicenseAgreement">License Agreement</h1>
 
-<div id="licenseagreement">
+<div id="agreement">
     <div style="height:800px">Loading...</div>
 </div>
