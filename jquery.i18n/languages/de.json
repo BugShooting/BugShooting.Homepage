@@ -1,5 +1,6 @@
 {	
-	"capture": "Aufnehmen",
-	"edit": "Bearbeiten",
-	"share": "Teilen"
+	"Capture": "Aufnehmen",
+	"Edit": "Bearbeiten",
+	"Share": "Teilen",
+	"ReleaseNotes": "Release Notes"
 }
