@@ -78,7 +78,7 @@ permalink: /free/
   
     var data = new FormData();
     data.append('email', document.getElementById("email").value);
-    data.append('language', 'en-US');
+    data.append('language', $.i18n().locale);
   
     xhr.send(data);
         
