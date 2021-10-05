@@ -7,7 +7,7 @@ permalink: /agreement/
 
     const xhr = new XMLHttpRequest();
       
-    xhr.open("GET", "https://services.bugshooting.com/rest/licenseagreement");
+    xhr.open("POST", "https://services.bugshooting.com/rest/licenseagreement");
 
     var data = new FormData();
     data.append('language', $.i18n().locale);

@@ -8,7 +8,7 @@ permalink: /imprint/
 
     const xhr = new XMLHttpRequest();
       
-    xhr.open("GET", "https://services.bugshooting.com/rest/disclaimer");
+    xhr.open("POST", "https://services.bugshooting.com/rest/disclaimer");
 
     var data = new FormData();
     data.append('language', $.i18n().locale);
