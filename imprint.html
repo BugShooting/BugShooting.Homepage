@@ -6,13 +6,17 @@ permalink: /imprint/
 
 <script type="text/javascript">
 
-    const request = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
       
-    request.open("GET", "https://services.bugshooting.com/rest/disclaimer");
-    request.send();
+    xhr.open("GET", "https://services.bugshooting.com/rest/disclaimer");
+
+    var data = new FormData();
+    data.append('language', $.i18n().locale);
+
+    xhr.send(data);
   
-    request.onload = (e) => {
-       document.getElementById("disclaimer").innerText = request.response;
+    xhr.onload = (e) => {
+       document.getElementById("disclaimer").innerText = xhr.response;
     }
     
 </script>

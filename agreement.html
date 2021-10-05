@@ -5,13 +5,17 @@ permalink: /agreement/
 
 <script type="text/javascript">
 
-    const request = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
       
-    request.open("GET", "https://services.bugshooting.com/rest/licenseagreement");
-    request.send();
+    xhr.open("GET", "https://services.bugshooting.com/rest/licenseagreement");
+
+    var data = new FormData();
+    data.append('language', $.i18n().locale);
+
+    xhr.send(data);
   
-    request.onload = (e) => {
-       document.getElementById("licenseagreement").innerText = request.response;
+    xhr.onload = (e) => {
+       document.getElementById("licenseagreement").innerText = xhr.response;
     }
     
 </script>
