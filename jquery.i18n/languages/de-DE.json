@@ -45,5 +45,8 @@
 	"Imprint": "Impressum",
 	"Purchase": "Kaufen",
 	"PurchaseVolume": "Volumenlizenz kaufen",
-	"Disclaimer": "Haftungsausschluss"
+	"Disclaimer": "Haftungsausschluss",
+	"FreeLicenseDescription": "Die kostenlose Lizenz darf nur in einem privaten und nicht-kommerziellen Umfeld benutzt werden. Kommerzielle Nutzung von Bug Shooting erfordert den Erwerb einer kommerziellen Lizenz.",
+	"AcceptLicenseAgreement": "Bug Shooting Lizenzvereinbarung zustimmen.",
+	"Read": "Lesen"
 }
