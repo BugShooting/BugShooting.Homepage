@@ -9,18 +9,24 @@ permalink: /pricing/
 
 <div class="bs-callout bs-callout-warning">
   <div class="row">
-    <div class="col-md-4">
-      <p>{{ price.title }}</p>
-      <p>{{ price.price_title }} <span class="price_small">{{ price.price }}</span></p>
-    </div>
     
-    {% if price.price_title == '' %}
+    {% if price.quantity == 1 %}
+
+      <div class="col-md-4">
+        <p>1 <span data-i18n="License">License</span></p>
+      </div>
 
       <div class="col-md-6">
         <a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
       </div>
     
     {% else %}
+
+      <div class="col-md-4">
+        
+        <p><span data-i18n="FromLicenses">from</span> {{ price.quantity }} <span data-i18n="Licenses">Licenses</span></p>
+        <p><span data-i18n="EachLicense">each</span> <span class="price_small">{{ price.price }}</span></p>
+      </div>
 
       <div class="col-md-6">
         <a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="PurchaseSingles">Purchase single licenses</a>
@@ -30,7 +36,7 @@ permalink: /pricing/
     {% endif %}
 
     <br>
-    
+
   </div>
 </div>
 
