@@ -52,6 +52,7 @@
               cookie += "; max-age=" + (daysToLive*24*60*60);
               document.cookie = cookie;
           }
+        }
 
         function getCookie(name) {
           var cookieArr = document.cookie.split(";");
@@ -62,9 +63,8 @@
               }
           }
           return null;
-      }
-}
-	    
+       }
+       
     </script>
     
 </head>
