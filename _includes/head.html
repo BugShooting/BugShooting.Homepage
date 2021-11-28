@@ -23,28 +23,13 @@
     
     <script>
 
-      alert($.i18n().locale);
-	    
-       var locale = getCookie('locale');
-	    
-       if (locale === ''){ 
-	       var language = navigator.language || navigator.userLanguage; 
-          if (language.startsWith('de')) {
-            locale = 'de-DE';
-                } else {
-            locale = 'en-US';
-          }   
-       }
-	    
-       $.i18n().locale = locale;
-
        $.i18n().load('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
           function () {
 	          $('body').i18n(); 
           } );
  
         function setLocale(locale) {
-          setCookie('locale', locale, 30);
+          $.i18n().locale = locale;
           location.reload();
         }
 
