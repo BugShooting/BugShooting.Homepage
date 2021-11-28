@@ -23,18 +23,17 @@
     
     <script>
 	    
+       const allLocales = new Set(['de-DE', 'en-US'])
+       
        var locale = getCookie('locale');
 	    
-       if (locale === ''){ 
-	       var language = navigator.language || navigator.userLanguage; 
-          if (language.startsWith('de')) {
-            locale = 'de-DE';
-          } else {
-            locale = 'en-US';
-          }   
+       if (!locale === '') { 
+        $.i18n().locale = locale;
        }
 	    
-       $.i18n().locale = locale;
+       if (!allLocales.has($.i18n().locale)) {
+        $.i18n().locale = 'en-US';
+       }
 
        $.i18n().load('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
           function () {
