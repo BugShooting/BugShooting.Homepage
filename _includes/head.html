@@ -22,16 +22,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
     
     <script>
-	    
-      var userLang = navigator.language || navigator.userLanguage; 
-      alert ("The language is: " + userLang);
+	
+       var language = navigator.language || navigator.userLanguage; 
+   
+       if (language.startsWith('de')) {
+         $.i18n().locale = 'de-DE';
+       } else {
+         $.i18n().locale = 'en-US';
+       }
 
-      $.i18n().locale = 'de-DE';
-
-      $.i18n().load('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
-	function () {
-                $('body').i18n(); 
-        } );
+       $.i18n().load('{{ site.url }}{{ site.baseurl }}/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
+          function () {
+	   $('body').i18n(); 
+          } );
  
     </script>
     
