@@ -27,7 +27,7 @@
        
        var locale = getCookie('locale');
 	    
-       if (!locale === '') { 
+       if (locale !== '') { 
         $.i18n().locale = locale;
        }
 	    
