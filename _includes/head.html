@@ -22,6 +22,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
     
     <script>
+	    
+      var userLang = navigator.language || navigator.userLanguage; 
+      alert ("The language is: " + userLang);
 
       $.i18n().locale = 'de-DE';
 
