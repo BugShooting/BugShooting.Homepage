@@ -7,7 +7,11 @@ permalink: /pricing/
 <h1 data-i18n="BuyForComercial">Buy For Comercial Usage</h1>
 
 <p>1 <span data-i18n="License">License</span></p>
-<p><span id="price">9.99 €</span> <button onclick="setQuyntity(1)">+</button><button onclick="setQuyntity(-1)">-</button></p>
+<span id="price">9.99 €</span>
+
+<button onclick="setQuantity(quantity+1)">+</button>
+<input type="number" min="1" max="1000" onchange="setQuantity(value)">
+<button onclick="setQuantity(quantity-1)">-</button>
 
 <a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
 <a id="purchase_volume" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="PurchaseVolume">Purchase volume license</a>
@@ -21,19 +25,18 @@ permalink: /pricing/
 
 <script type="text/javascript">
 
-  var quantity = 1;
+  var quantity;
 
-  setQuyntity(0)
+  setQuantity(1)
   
-  function setQuyntity(offset){
-    
-    quantity = quantity + offset;
+  function setQuantity(newQuntity){
 
-    if (quantity < 1){
+    if (newQuntity < 1){
       quantity = 1;
-    }
-    if (quantity > 1000){
+    }else if (newQuntity > 1000){
       quantity = 1000;
+    }else{
+      quantity = newQuntity;
     }
 
     var price;
