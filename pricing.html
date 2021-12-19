@@ -5,23 +5,20 @@ permalink: /pricing/
 
 <h1 data-i18n="BuyForComercial">Buy for Comercial Usage</h1>
 
-<div class="form-group row">
-  <label for="quantityInput" class="col-sm-2 col-form-label" id="price">9.99 €</label>
-  <div class="col-sm-10">
-    <div class="input-group" id="quantityInput">
-      <div class="input-group-prepend">
-        <button class="btn btn-light" onclick="setQuantity(1)">+</button>
-      </div>
-      <input class="form-control" id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity()" onkeypress="showQuantity()">
-      <div class="input-group-append">
-        <button class="btn btn-light" onclick="setQuantity(-1)">-</button>
-      </div>
+<div class="form-inline">
+  <span class="col-sm-2 col-form-label" id="price">9.99 €</span>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <button class="btn btn-light" onclick="setQuantity(1)">+</button>
+    </div>
+    <input class="form-control" id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity()" onkeypress="showQuantity()">
+    <div class="input-group-append">
+      <button class="btn btn-light" onclick="setQuantity(-1)">-</button>
     </div>
   </div>
+  <a id="purchase" class="btn btn-yellow mb-2" data-i18n="Purchase">Purchase</a>
+  <a id="purchase_volume" class="btn btn-yellow mb-2" data-i18n="PurchaseVolume">Purchase volume license</a> 
 </div>
-
-<a id="purchase" class="btn btn-yellow" data-i18n="Purchase">Purchase</a>
-<a id="purchase_volume" class="btn btn-yellow" data-i18n="PurchaseVolume">Purchase volume license</a> 
 
 <p>Discounts</p>
 <p><span data-i18n="LicensesFrom">from</span> 5 <span data-i18n="Licenses">Licenses</span> - 6,99 € (-30%)</p>
