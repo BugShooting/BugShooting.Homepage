@@ -10,7 +10,7 @@ permalink: /pricing/
 <span id="price">9.99 €</span>
 
 <button onclick="setQuantity(1)">+</button>
-<input id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity" keydown="showQuantity">
+<input id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity()" onkeydown="showQuantity()">
 <button onclick="setQuantity(-1)">-</button>
 
 <a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
