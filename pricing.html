@@ -27,8 +27,15 @@ permalink: /pricing/
   setQuyntity(0)
   
   function setQuyntity(offset){
-
+    
     quantity = quantity + offset;
+
+    if (quantity < 1){
+      quantity = 1;
+    }
+    if (quantity > 1000){
+      quantity = 1000;
+    }
 
     var price;
 
