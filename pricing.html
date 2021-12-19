@@ -9,9 +9,9 @@ permalink: /pricing/
 <p>1 <span data-i18n="License">License</span></p>
 <span id="price">9.99 €</span>
 
-<button onclick="setQuantity(quantity+1)">+</button>
-<input type="number" min="1" max="1000" onchange="setQuantity(value)">
-<button onclick="setQuantity(quantity-1)">-</button>
+<button onclick="setQuantity(1)">+</button>
+<input id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity">
+<button onclick="setQuantity(-1)">-</button>
 
 <a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
 <a id="purchase_volume" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="PurchaseVolume">Purchase volume license</a>
@@ -25,19 +25,16 @@ permalink: /pricing/
 
 <script type="text/javascript">
 
-  var quantity;
+  showQuantity();
 
-  setQuantity(1)
-  
-  function setQuantity(newQuntity){
+  function setQuantity(offset){
+    document.getElementById("quantity").value += offset;
+    showQuantity()
+  }
 
-    if (newQuntity < 1){
-      quantity = 1;
-    }else if (newQuntity > 1000){
-      quantity = 1000;
-    }else{
-      quantity = newQuntity;
-    }
+  function showQuantity(){
+
+    var quantity = document.getElementById("quantity").value;
 
     var price;
 
