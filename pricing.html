@@ -46,7 +46,10 @@ permalink: /pricing/
     var quantityInput = document.getElementById("quantity");
     var quantity = parseInt(quantityInput.value);
 
-    if (quantity < parseInt(quantityInput.min)){
+    if (Number.isNaN(quantity)){
+      quantity = parseInt(quantityInput.min);
+      quantityInput.value = quantity;
+    }else if (quantity < parseInt(quantityInput.min)){
       quantity = parseInt(quantityInput.min);
       quantityInput.value = quantity;
     }else if (quantity > parseInt(quantityInput.max)){
