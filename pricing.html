@@ -6,20 +6,26 @@ permalink: /pricing/
 
 <h1 data-i18n="BuyForComercial">Buy for Comercial Usage</h1>
 
-<span id="price">9.99 €</span>
-
-<div class="input-group">
-  <div class="input-group-prepend">
-    <button class="btn btn-light" onclick="setQuantity(1)">+</button>
+<div class="form-group row">
+  <div class="col-xs-2">
+    <span id="price">9.99 €</span>
   </div>
-  <input class="form-control" id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity()" onkeypress="showQuantity()">
-  <div class="input-group-append">
-    <button class="btn btn-light" onclick="setQuantity(-1)">-</button>
+  <div class="col-xs-2">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <button class="btn btn-light" onclick="setQuantity(1)">+</button>
+      </div>
+      <input class="form-control" id="quantity" type="number" value="1" min="1" max="1000" onchange="showQuantity()" onkeypress="showQuantity()">
+      <div class="input-group-append">
+        <button class="btn btn-light" onclick="setQuantity(-1)">-</button>
+      </div>
+    </div>
   </div>
 </div>
-
-<a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
-<a id="purchase_volume" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="PurchaseVolume">Purchase volume license</a>
+<div class="form-group row">
+  <a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
+  <a id="purchase_volume" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="PurchaseVolume">Purchase volume license</a> 
+</div>
 
 <p>Discounts</p>
 <p><span data-i18n="LicensesFrom">from</span> 5 <span data-i18n="Licenses">Licenses</span> - 6,99 € (-30%)</p>
