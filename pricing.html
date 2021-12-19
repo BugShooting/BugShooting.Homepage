@@ -51,14 +51,15 @@ permalink: /pricing/
 
   function showQuantity(){
 
-    var quantity = parseInt(document.getElementById("quantity").value);
+    var quantityInput = document.getElementById("quantity");
+    var quantity = parseInt(quantityInput.value);
 
-    if (quantity < 1){
-      quantity = 1;
-      document.getElementById("quantity").value = quantity;
-    }else if (quantity > 1000){
-      quantity = 1000;
-      document.getElementById("quantity").value = quantity;
+    if (quantity < parseInt(quantityInput.min)){
+      quantity = parseInt(quantityInput.min);
+      quantityInput.value = quantity;
+    }else if (quantity > parseInt(quantityInput.max)){
+      quantity = parseInt(quantityInput.max);
+      quantityInput.value = quantity;
     }
 
     var price;
