@@ -5,6 +5,10 @@ permalink: /pricing/
 
 <h1 data-i18n="BuyForComercial">Buy For Comercial Usage</h1>
 
+<p>1 <span data-i18n="License">License</span></p>
+<p><span class="price_small">{{ price.price }}</span></p>
+
+
 {% for price in site.data.prices %}
 
 <div class="bs-callout bs-callout-warning">
@@ -26,7 +30,7 @@ permalink: /pricing/
       <div class="col-md-4">
         
         <p><span data-i18n="LicensesFrom">from</span> {{ price.quantity }} <span data-i18n="Licenses">Licenses</span></p>
-        <p><span data-i18n="LicensesEach">each</span> <span class="price_small">{{ price.price }}</span></p>
+        <p><span data-i18n="LicensesEach">each</span> <span class="price_discount">{{ price.price }}</span></p>
       </div>
 
       <div class="col-md-6">
