@@ -29,7 +29,7 @@ permalink: /pricing/
 
   function setQuantity(offset){
 
-    var quantity = document.getElementById("quantity").value;
+    var quantity = parseInt(document.getElementById("quantity").value);
 
     document.getElementById("quantity").value = quantity + offset;
     
@@ -39,7 +39,7 @@ permalink: /pricing/
 
   function showQuantity(){
 
-    var quantity = document.getElementById("quantity").value;
+    var quantity = parseInt(document.getElementById("quantity").value);
 
     var price;
 
