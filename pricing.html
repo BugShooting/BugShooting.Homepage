@@ -15,6 +15,16 @@ permalink: /pricing/
 
     document.getElementById("price").innerText = quantity.toFixed(2) + " €";
 
+    if (quantity == 1){
+      document.getElementById("purchase").style.display = "block";
+      document.getElementById("purchase_single").style.display = "none";
+      document.getElementById("purchase").style.display = "none";
+    }else{
+      document.getElementById("purchase").style.display = "none";
+      document.getElementById("purchase_single").style.display = "block";
+      document.getElementById("purchase_volume").style.display = "block";
+    }
+
   }
 
 </script>
@@ -24,7 +34,9 @@ permalink: /pricing/
 
 <p>1 <span data-i18n="License">License</span></p>
 <p><span id="price" /> <button onclick="setQuyntity(1)">+</button><button onclick="setQuyntity(-1)">-/button></p>
-<a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
+<a id="purchase" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
+<a id="purchase_single" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
+<a id="purchase_volume" class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
 
 <p>Discounts</p>
 <p><span data-i18n="LicensesFrom">from</span> 5 <span data-i18n="Licenses">Licenses</span> - 6,99 € (-30%)</p>
