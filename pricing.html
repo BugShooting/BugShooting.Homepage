@@ -13,7 +13,23 @@ permalink: /pricing/
 
     quantity = quantity + offset;
 
-    document.getElementById("price").innerText = quantity.toFixed(2) + " €";
+    var price;
+
+    if (quantity >= 500 ){
+      price = 1.99;
+    }else if (quyntoty >= 100){
+      price = 2.99;
+    }else if (quyntoty >= 50){
+      price = 3.99;
+    }else if (quyntoty >= 20){
+      price = 4.99;
+    }else if (quyntoty >= 50){
+      price = 6.99;
+    }else{
+      price = 9.99;
+    }
+
+    document.getElementById("price").innerText = price.toFixed(2) + " €";
 
     if (quantity == 1){
       document.getElementById("purchase").style.display = "block";
