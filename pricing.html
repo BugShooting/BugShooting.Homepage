@@ -6,11 +6,9 @@ permalink: /pricing/
 <h1 data-i18n="BuyForComercial">Buy for Comercial Usage</h1>
 
 <div class="form-group row">
-  <div class="col-xs-2">
-    <span id="price">9.99 €</span>
-  </div>
-  <div class="col-xs-2">
-    <div class="input-group">
+  <label for="quantityInput" class="col-sm-2 col-form-label" id="price">9.99 €</label>
+  <div class="col-sm-10">
+    <div class="input-group" id="quantityInput">
       <div class="input-group-prepend">
         <button class="btn btn-light" onclick="setQuantity(1)">+</button>
       </div>
@@ -21,10 +19,9 @@ permalink: /pricing/
     </div>
   </div>
 </div>
-<div class="form-group row">
-  <a id="purchase" class="btn btn-yellow" data-i18n="Purchase">Purchase</a>
-  <a id="purchase_volume" class="btn btn-yellow" data-i18n="PurchaseVolume">Purchase volume license</a> 
-</div>
+
+<a id="purchase" class="btn btn-yellow" data-i18n="Purchase">Purchase</a>
+<a id="purchase_volume" class="btn btn-yellow" data-i18n="PurchaseVolume">Purchase volume license</a> 
 
 <p>Discounts</p>
 <p><span data-i18n="LicensesFrom">from</span> 5 <span data-i18n="Licenses">Licenses</span> - 6,99 € (-30%)</p>
