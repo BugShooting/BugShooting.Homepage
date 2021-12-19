@@ -35,7 +35,15 @@ permalink: /pricing/
 
   function setQuantity(offset){
   
-    document.getElementById("quantity").value = parseInt(document.getElementById("quantity").value) + offset;
+    var newQuantity = parseInt(document.getElementById("quantity").value) + offset;
+
+    if (newQuantity < 1){
+      newQuantity = 1;
+    }else if (newQuantity > 1000){
+      newQuantity = 1000;
+    }
+
+    document.getElementById("quantity").value = newQuantity;
 
     showQuantity();
 
