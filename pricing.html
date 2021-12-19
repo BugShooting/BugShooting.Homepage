@@ -29,9 +29,17 @@ permalink: /pricing/
 
   function setQuantity(offset){
 
-    var quantity = parseInt(document.getElementById("quantity").value);
+    var quantityInput = document.getElementById("quantity");
 
-    document.getElementById("quantity").value = quantity + offset;
+    var newQuantity = parseInt(quantityInput.value) + offset;
+
+    if (newQuantity < quantityInput.min){
+      quantityInput.value = quantityInput.min;
+    }else if (newQuantity > quantityInput.max){
+      quantityInput.value = quantityInput.max;
+    }else{
+      quantityInput.value = newQuantity;
+    }
     
     showQuantity()
 
