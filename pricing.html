@@ -3,10 +3,27 @@ layout: page
 permalink: /pricing/
 ---
 
+<script type="text/javascript">
+
+  var quantity = 1;
+
+  setQuyntity(0)
+  
+  function setQuyntity(offset){
+
+    quantity = quantity + offset;
+
+    document.getElementById("price").innerText = quantity.toFixed(2) + " €";
+
+  }
+
+</script>
+
+
 <h1 data-i18n="BuyForComercial">Buy For Comercial Usage</h1>
 
 <p>1 <span data-i18n="License">License</span></p>
-<p>9,99 €</p>
+<p><span id="price" /> <button onclick="setQuyntity(1)">+</button><button onclick="setQuyntity(-1)">-/button></p>
 <a class="btn btn-yellow" href="{{ price.purchase_link }}" data-i18n="Purchase">Purchase</a>
 
 <p>Discounts</p>
