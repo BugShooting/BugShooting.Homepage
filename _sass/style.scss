@@ -114,24 +114,6 @@ a:link, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-.price {
-    font-size: 3em;
-    font-weight: 100;
-}
-.price_discount {
-    font-size: 1.5em;
-    font-weight: 400;
-    background-color: #00A600;
-    color: White;
-    text-align: center;
-    vertical-align: middle;
-    padding:0.1em;
-}
-.price_small {
-    font-size: 2em;
-    font-weight: 100;
-}
-
 @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
     40% {-webkit-transform: translateY(-30px);} 
