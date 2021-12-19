@@ -41,15 +41,7 @@ permalink: /pricing/
 
   function showQuantity(){
 
-    var quantityInput = document.getElementById("quantity");
-    
-    if (quantityInput.value < quantityInput.min){
-      quantityInput.value = quantityInput.min;
-    }else if (quantityInput.value > quantityInput.max){
-      quantityInput.value = quantityInput.max;
-    }
-
-    var quantity = parseInt(quantityInput.value);
+    var quantity = parseInt(document.getElementById("quantity").value);
 
     var price;
 
