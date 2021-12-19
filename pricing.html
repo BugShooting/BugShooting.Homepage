@@ -53,10 +53,10 @@ permalink: /pricing/
 
     var quantity = parseInt(document.getElementById("quantity").value);
 
-    if (newQuantity < 1){
+    if (quantity < 1){
       quantity = 1;
       document.getElementById("quantity").value = quantity;
-    }else if (newQuantity > 1000){
+    }else if (quantity > 1000){
       quantity = 1000;
       document.getElementById("quantity").value = quantity;
     }
