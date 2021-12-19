@@ -28,8 +28,13 @@ permalink: /pricing/
   showQuantity();
 
   function setQuantity(offset){
-    document.getElementById("quantity").value += offset;
+
+    var quantity = document.getElementById("quantity").value;
+
+    document.getElementById("quantity").value = quantity + offset;
+    
     showQuantity()
+
   }
 
   function showQuantity(){
