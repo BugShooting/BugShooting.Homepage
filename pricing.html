@@ -52,7 +52,9 @@ permalink: /pricing/
       price = 9.99;
     }
 
-    document.getElementById("price").textContent = price.toFixed(2) + " €";
+    var totalprice = price * quantity;
+
+    document.getElementById("price").textContent = totalprice.toFixed(2) + " €";
 
     if (quantity == 1){
       document.getElementById("purchase_volume").style.display = "none";
