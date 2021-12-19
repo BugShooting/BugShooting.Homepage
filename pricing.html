@@ -29,17 +29,7 @@ permalink: /pricing/
 
   function setQuantity(offset){
 
-    var quantityInput = document.getElementById("quantity");
-
-    var newQuantity = parseInt(quantityInput.value) + offset;
-
-    if (newQuantity < quantityInput.min){
-      quantityInput.value = quantityInput.min;
-    }else if (newQuantity > quantityInput.max){
-      quantityInput.value = quantityInput.max;
-    }else{
-      quantityInput.value = newQuantity;
-    }
+    document.getElementById("quantity") = parseInt(document.getElementById("quantity").value) + offset;
     
     showQuantity()
 
@@ -47,7 +37,15 @@ permalink: /pricing/
 
   function showQuantity(){
 
-    var quantity = parseInt(document.getElementById("quantity").value);
+    var quantityInput = document.getElementById("quantity");
+    
+    if (quantityInput.value < quantityInput.min){
+      quantityInput.value = quantityInput.min;
+    }else if (quantityInput.value > quantityInput.max){
+      quantityInput.value = quantityInput.max;
+    }
+
+    var quantity = parseInt(quantityInput.value);
 
     var price;
 
