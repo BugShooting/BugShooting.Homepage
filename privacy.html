@@ -15,12 +15,14 @@ permalink: /privacy/
 
 <script type="text/javascript">
 
-    alert($.i18n().locale);
+    
 
     if ($.i18n().locale == "de-DE"){
+        alert("GERMAN");
         document.getElementById("privacy_en").display = "none";
         document.getElementById("privacy_de").display = "block";
     }else{
+        alert("ENGLISH");
         document.getElementById("privacy_en").display = "block";
         document.getElementById("privacy_de").display = "none";
     }
