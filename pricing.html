@@ -6,9 +6,15 @@ permalink: /pricing/
 <h1 data-i18n="BuyForComercial">Buy for Comercial Usage</h1>
 
 <div class="form-group row">
-  <label for="price" class="col-sm-2 col-form-label">Total</label>
+  <label for="price" class="col-sm-2 col-form-label">Price</label>
   <div class="col-sm-10">
-    <label id="price" class="col-sm-2 col-form-label">Email</label>
+    <label id="price" class="col-sm-2 col-form-label">9.99 €</label>
+  </div>
+</div>
+<div class="form-group row">
+  <label for="priceTotal" class="col-sm-2 col-form-label">Total</label>
+  <div class="col-sm-10">
+    <label id="priceTotal" class="col-sm-2 col-form-label">9.99 €</label>
   </div>
 </div>
 <div class="form-group row">
@@ -81,9 +87,10 @@ permalink: /pricing/
       price = 9.99;
     }
 
-    var totalprice = price * quantity;
+    var priceTotal = price * quantity;
 
-    document.getElementById("price").textContent = totalprice.toFixed(2) + " €";
+    document.getElementById("price").textContent = price.toFixed(2) + " €";
+    document.getElementById("priceTotal").textContent = priceTotal.toFixed(2) + " €";
 
     if (quantity == 1){
       document.getElementById("purchase_volume").style.display = "none";
