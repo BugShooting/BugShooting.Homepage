@@ -86,8 +86,10 @@ permalink: /pricing/
     document.getElementById("price").textContent = price.toFixed(2) + " €";
 
     if (quantity == 1){
+      
       document.getElementById("totalView").style.display = "none";
       document.getElementById("purchase_volume").style.display = "none";
+
     }else{
 
       var priceTotal = price * quantity;
