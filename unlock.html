@@ -25,12 +25,6 @@ permalink: /unlock/
   </div>
   <div class="row mb-3">
     <div class="form-group">
-      <label for="email" class="col-sm-2 col-form-label" data-i18n="Email">Email</label>
-      <input class="form-control" type="email" required name="email" id="email" maxlength="100">
-    </div>
-  </div>
-  <div class="row mb-3">
-    <div class="form-group">
       <button class="btn btn-lg btn-primary btn-block" type="submit" data-i18n="SendUnlockRequest">Send unlock request</button>
     </div>
   </div>
@@ -76,7 +70,6 @@ permalink: /unlock/
     var data = new FormData();
     data.append('name', document.getElementById("name").value);
     data.append('serialid', document.getElementById("serialid").value);
-    data.append('email', document.getElementById("email").value);
     data.append('language', $.i18n().locale);
     
     xhr.send(data);
