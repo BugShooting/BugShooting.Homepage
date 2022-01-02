@@ -2,7 +2,7 @@
 title: Bug Shooting
 email: mail@bugshooting.com
 description: Screen Capture Software for Bug Tracking and Image Sharing
-baseurl: "/"
+baseurl: "https://test.bugshooting.com"
 url: "https://test.bugshooting.com"
 
 docs_url: https://docs.bugshooting.com
