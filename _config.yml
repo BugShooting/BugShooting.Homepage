@@ -5,10 +5,6 @@ description: Screen Capture Software for Bug Tracking and Image Sharing
 baseurl: "https://test.bugshooting.com"
 url: "https://test.bugshooting.com"
 
-docs_url: https://docs.bugshooting.com
-translate_url: http://translate.bugshooting.com
-download_url: https://services.bugshooting.com/rest/download
-
 # Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
