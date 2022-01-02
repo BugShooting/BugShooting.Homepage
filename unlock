@@ -70,7 +70,8 @@ permalink: /unlock/
     var data = new FormData();
     data.append('name', document.getElementById("name").value);
     data.append('serialid', document.getElementById("serialid").value);
-  
+    data.append('language', $.i18n().locale);
+    
     xhr.send(data);
         
   });
