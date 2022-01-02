@@ -8,7 +8,7 @@ permalink: /unlock/
 <p><span data-i18n="LicenseUnlockDescription">Here you can send unlock request of your Bug Shooting license.</span></p>
 
 <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none"></div>
-<div id="successMessage" class="alert alert-success " role="alert" style="display:none" data-i18n="LicenseUnlockSuccess">XXXXXXXXXXXXXXXXXXXXXXXXX</div>
+<div id="successMessage" class="alert alert-success " role="alert" style="display:none" data-i18n="LicenseUnlockSuccess">You will receive an email notification once the license has been unlocked.</div>
 
 <form id="submitform">
   <div class="row mb-3">
