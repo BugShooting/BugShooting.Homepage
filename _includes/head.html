@@ -45,9 +45,7 @@
         }
 
         function setCookie(name, value, daysToLive) {
-          var cookie = name + "=" + encodeURIComponent(value);
-          cookie += "; max-age=" + (daysToLive*24*60*60);
-          document.cookie = cookie;
+          document.cookie = name + "=" + encodeURIComponent(value) + "; max-age=" + (daysToLive*24*60*60) + "; path=/";
         }
 
         function getCookie(name) {
