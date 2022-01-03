@@ -3,23 +3,6 @@ layout: page
 permalink: /agreement/
 ---
 
-<script type="text/javascript">
-
-    const xhr = new XMLHttpRequest();
-      
-    xhr.open("POST", "https://services.bugshooting.com/rest/licenseagreement");
-
-    var data = new FormData();
-    data.append('language', $.i18n().locale);
-
-    xhr.send(data);
-  
-    xhr.onload = (e) => {
-       document.getElementById("agreement").innerText = xhr.response;
-    }
-    
-</script>
-
 <div id="agreement_en">
     <h1>Software License Terms and Conditions for the Use of Bug Shooting</h1>
     <p>1. General</p> 
