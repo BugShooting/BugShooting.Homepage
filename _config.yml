@@ -3,7 +3,6 @@ title: Bug Shooting
 email: mail@bugshooting.com
 description: Screen Capture Software for Bug Tracking and Image Sharing
 baseurl: "https://test.bugshooting.com"
-url: "https://test.bugshooting.com"
 
 # Build settings
 markdown: kramdown
