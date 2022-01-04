@@ -30,7 +30,7 @@ layout: main
     <div class="col-md-4 feature">
       <span class="ti-pencil feature_symbol"></span>
       <h3 data-i18n="Edit">Edit</h3>
-      <span data-i18n="EditDescription">Create professional graphics by adding different effects to your screenshots. Add text, arrows or other graphics.</span>
+      <span data-i18n="EditDescription">Create professional graphics by adding different effects to your screenshots. Add text, arrows or other graphics.</span> <span class="ti-info-alt" data-toggle="modal" data-target="#featureModal"></span>
     </div>
     <div class="col-md-4 feature">
       <span class="ti-share feature_symbol"></span>
@@ -51,6 +51,21 @@ layout: main
       <span class="ti-crown feature_symbol"></span>
       <h3 data-i18n="FreeForPersonal">Free for Personal Usage</h3>
       <span data-i18n="FreeForPersonalDescription">Bug Shooting is absolutely free for personal and non comercial usage.</span> <a href="{{ site.baseurl }}/free"><span class="ti-info-alt"></span></a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="featureModal" tabindex="-1" role="dialog" aria-labelledby="featureModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="{{ site.baseurl }}/assets/tools.png" ></img>
+        </div>
+      </div>
     </div>
   </div>
 
