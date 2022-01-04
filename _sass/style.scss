@@ -92,7 +92,7 @@ a:link, a:visited, a:hover, a:active {
 .row-title {
     font-weight: 400;
 }
-.feature span {
+.feature [class^="ti-"] {
     font-size: 5em;
     color: #016cc7;
 }
