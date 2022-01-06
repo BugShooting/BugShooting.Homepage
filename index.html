@@ -2,21 +2,29 @@
 layout: main
 ---
 
+<div class="wrapper">
+    
+  <div class="container-fluid header">
+    <div class="container">
+   
+      <div class="float-end">
+        <span class="ti-world"></span>
+        <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+            <option value="en-US">English</option>
+            <option value="de-DE">Deutsch</option>
+        </select>
+      </div>
+
+      <script>
+        document.getElementById('languageSelect').value = $.i18n().locale;
+      </script>
+
+    </div>
+  </div>
+
 <div class="container-fluid">
 
   <div class="row hero-header">
-
-    <div class="float-end">
-      <span class="ti-world"></span>
-      <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
-          <option value="en-US">English</option>
-          <option value="de-DE">Deutsch</option>
-      </select>
-    </div>
-  
-    <script>
-      document.getElementById('languageSelect').value = $.i18n().locale;
-    </script>
 
     <div class="col-md-7">
       <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="..."/>
