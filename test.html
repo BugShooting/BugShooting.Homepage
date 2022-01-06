@@ -4,21 +4,21 @@ layout: main
 
 <div class="container-fluid">
 
-    <div class="container">
+  <div class="row hero-header">
 
-        <div class="float-end">
-            <span class="ti-world"></span>
-            <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
-                <option value="en-US">English</option>
-                <option value="de-DE">Deutsch</option>
-            </select>
-        </div>
-
-        <script>
-            document.getElementById('languageSelect').value = $.i18n().locale;
-        </script>
-
+    <div class="float-end">
+      <span class="ti-world"></span>
+      <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+          <option value="en-US">English</option>
+          <option value="de-DE">Deutsch</option>
+      </select>
     </div>
+
+    <script>
+        document.getElementById('languageSelect').value = $.i18n().locale;
+    </script>
+
+  </div>
 
   <div class="row hero-header">
 
