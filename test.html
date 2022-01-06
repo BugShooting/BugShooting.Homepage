@@ -2,33 +2,23 @@
 layout: main
 ---
 
-<header class="site-header">
+<div class="container-fluid">
 
-    <div class="wrapper">
-  
-      <div class="container-fluid header">
-        <div class="container">
-       
-          <div class="float-end">
+    <div class="container">
+
+        <div class="float-end">
             <span class="ti-world"></span>
             <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
                 <option value="en-US">English</option>
                 <option value="de-DE">Deutsch</option>
             </select>
-          </div>
-  
-          <script>
-            document.getElementById('languageSelect').value = $.i18n().locale;
-          </script>
-  
         </div>
-      </div>
-  
-    </div> 
-  
-  </header>
 
-<div class="container-fluid">
+        <script>
+            document.getElementById('languageSelect').value = $.i18n().locale;
+        </script>
+
+    </div>
 
   <div class="row hero-header">
 
