@@ -114,8 +114,12 @@ a:link, a:visited, a:hover, a:active {
     border:0px;
     outline:0px;
     color: #fff;
-    background-color:#016cc7;
     background:none;
+    align-self: flex-end;
+}
+#languageselect option {
+    color: #000;
+    background-color:#000;
 }
 
 @-webkit-keyframes bounce { 
