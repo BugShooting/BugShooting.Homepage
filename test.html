@@ -6,11 +6,13 @@ layout: main
 
   <div class="row hero-header">
 
-    <span class="ti-world"></span>
-    <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
-        <option value="en-US">English</option>
-        <option value="de-DE">Deutsch</option>
-    </select>
+    <div class="col-md-3 ml-auto">
+      <span class="ti-world"></span>
+      <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+          <option value="en-US">English</option>
+          <option value="de-DE">Deutsch</option>
+      </select>
+    </div>
 
     <script>
         document.getElementById('languageSelect').value = $.i18n().locale;
