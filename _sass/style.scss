@@ -58,7 +58,6 @@ a:link, a:visited, a:hover, a:active {
 .header .logo {
   max-height: 3em;
 }
-
 .hero-header {
     background: #016cc7;
     min-height: 300px;
@@ -92,17 +91,14 @@ a:link, a:visited, a:hover, a:active {
 .row-title {
     font-weight: 400;
 }
-
 .feature {
     padding: 20px;
     margin-top: 30px;
 }
-
 .feature_symbol {
     font-size: 5em;
     color: #016cc7;
 }
-
 .whatnext {
     background-color: yellowgreen;
 }
@@ -110,10 +106,13 @@ a:link, a:visited, a:hover, a:active {
     background-color: #2a2a2a;
     color: #fff;
 }
-
 .footer {
     background-color: #2a2a2a;
     color: #fff;
+}
+.languageselect {
+    margin: 2px;
+    border: none;
 }
 
 @-webkit-keyframes bounce { 
