@@ -5,7 +5,33 @@
 
   <body class="d-flex flex-column min-vh-100">
 
-    {% include header.html %}
+    <header class="site-header">
+
+      <div class="wrapper">
+    
+        <div class="container-fluid header">
+          <div class="container">
+            
+            <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="..."/></a>
+            
+            <div class="float-end">
+              <span class="ti-world"></span>
+              <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+                  <option value="en-US">English</option>
+                  <option value="de-DE">Deutsch</option>
+              </select>
+            </div>
+    
+            <script>
+              document.getElementById('languageSelect').value = $.i18n().locale;
+            </script>
+    
+          </div>
+        </div>
+    
+      </div> 
+    
+    </header>
 
     <div class="page-content">
       <div class="wrapper flex-grow-1">
