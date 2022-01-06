@@ -113,8 +113,17 @@ a:link, a:visited, a:hover, a:active {
 .languageselect {
     margin: 2px;
     border: none;
-    font-family: 'themify'
 }
+#icon-added option::before{
+    padding-right: 10px;
+    font-family: "themify"
+ }
+ #language_en a::before{
+    content: "\e665";
+ }
+ #language_de a::before{
+    content: "\e665";
+ }
 
 @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
