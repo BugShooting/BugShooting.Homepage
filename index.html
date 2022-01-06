@@ -4,19 +4,20 @@ layout: main
 
 <div class="container-fluid">
 
-  <div class="float-end">
-    <span class="ti-world"></span>
-    <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
-        <option value="en-US">English</option>
-        <option value="de-DE">Deutsch</option>
-    </select>
-  </div>
-
-  <script>
-    document.getElementById('languageSelect').value = $.i18n().locale;
-  </script>
-
   <div class="row hero-header" id="home">
+
+    <div class="float-end">
+      <span class="ti-world"></span>
+      <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+          <option value="en-US">English</option>
+          <option value="de-DE">Deutsch</option>
+      </select>
+    </div>
+  
+    <script>
+      document.getElementById('languageSelect').value = $.i18n().locale;
+    </script>
+
     <div class="col-md-7">
       <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="..."/>
       <h1 data-i18n="SiteTitle">Screen-Capture Software.</h1>
