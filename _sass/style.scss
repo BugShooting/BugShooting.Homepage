@@ -118,10 +118,10 @@ a:link, a:visited, a:hover, a:active {
     padding-right: 10px;
     font-family: "themify"
  }
- #language_en a::before{
+ #language_en option::before{
     content: "\e665";
  }
- #language_de a::before{
+ #language_de option::before{
     content: "\e665";
  }
 
