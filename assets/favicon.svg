@@ -1,69 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg viewBox="0 0.066 261.661 239.609" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <bx:grid x="0.616" y="0.066" width="306.376" height="306.376"/>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="185.651" cy="75.991" r="42.39" id="gradient-0" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="185.651" cy="75.991" r="42.39" id="gradient-0" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="274.296" cy="104.496" r="20.319" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, -55.067024, -47.324265)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="274.296" cy="104.496" r="20.319" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, -55.066414, -47.324257)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="218.779" cy="120.889" r="15.833" id="gradient-2" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="218.779" cy="120.889" r="15.833" id="gradient-2" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="98.497" cy="103.748" r="20.319" id="gradient-3" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="98.497" cy="103.748" r="20.319" id="gradient-3" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="91.778" cy="187.313" r="20.319" id="gradient-4" gradientTransform="matrix(1, 0, 0, 1, -55.069625, -47.323444)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="91.778" cy="187.313" r="20.319" id="gradient-4" gradientTransform="matrix(1, 0, 0, 1, -55.070058, -47.323076)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="136.004" cy="171.739" r="15.833" id="gradient-5" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="136.004" cy="171.739" r="15.833" id="gradient-5" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="152.115" cy="120.421" r="15.833" id="gradient-6" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="152.115" cy="120.421" r="15.833" id="gradient-6" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="152.043" cy="221.034" r="15.833" id="gradient-7" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="152.043" cy="221.034" r="15.833" id="gradient-7" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="123.47" cy="254.134" r="20.319" id="gradient-8" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="123.47" cy="254.134" r="20.319" id="gradient-8" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="219.378" cy="-221.4" r="15.833" id="gradient-9" gradientTransform="matrix(1, 0, 0, 1, -55.070851, 47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="219.378" cy="-221.4" r="15.833" id="gradient-9" gradientTransform="matrix(1, 0, 0, 1, -55.071437, 47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="235.174" cy="171.736" r="15.833" id="gradient-10" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="235.174" cy="171.736" r="15.833" id="gradient-10" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="280.024" cy="186.931" r="20.319" id="gradient-11" gradientTransform="matrix(1, 0, 0, 1, -55.06782, -47.325097)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="280.024" cy="186.931" r="20.319" id="gradient-11" gradientTransform="matrix(1, 0, 0, 1, -55.06737, -47.324685)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="248.332" cy="253.37" r="20.319" id="gradient-12" gradientTransform="matrix(1, 0, 0, 1, -55.067055, -47.324249)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="248.332" cy="253.37" r="20.319" id="gradient-12" gradientTransform="matrix(1, 0, 0, 1, -55.066444, -47.324249)">
       <stop offset="0" style="stop-color: rgba(80, 80, 80, 1)"/>
       <stop offset="1" style="stop-color: rgba(29, 29, 29, 1)"/>
     </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="184.917" cy="163.167" r="81.665" id="gradient-13" gradientTransform="matrix(1, 0, 0, 1, -55.070851, -47.323673)">
+    <radialGradient gradientUnits="userSpaceOnUse" cx="184.917" cy="163.167" r="81.665" id="gradient-13" gradientTransform="matrix(1, 0, 0, 1, -55.071437, -47.323673)">
       <stop offset="0" style="stop-color: rgb(254, 77, 27);"/>
       <stop offset="1" style="stop-color: rgb(205, 47, 17);"/>
     </radialGradient>
-    <view id="view-1">
-      <title>View 1</title>
-    </view>
-    <view id="view-3">
-      <title>View 3</title>
-    </view>
   </defs>
   <path d="M 236.301 123.788 C 236.301 130.643 231.944 136.481 225.848 138.683 C 226.598 153.347 229.817 155.214 245.273 159.153 L 240.386 171.257 C 218.664 162.29 214.963 160.576 213.676 138.094 C 208.331 135.551 204.636 130.101 204.636 123.788 C 204.636 115.044 211.725 107.955 220.468 107.955 C 229.212 107.955 236.301 115.044 236.301 123.788 Z" style="stroke: rgb(0, 0, 0); fill: url(#gradient-11);" transform="matrix(-0.755174, 0.655524, -0.655524, -0.755174, 486.349433, 97.569703)"/>
   <path d="M 204.61 190.228 C 204.61 197.083 200.253 202.921 194.157 205.123 C 194.907 219.787 198.126 221.654 213.582 225.593 L 208.695 237.697 C 186.973 228.73 183.272 227.016 181.985 204.534 C 176.639 201.991 172.944 196.541 172.944 190.228 C 172.944 181.484 180.033 174.395 188.777 174.395 C 197.521 174.395 204.61 181.484 204.61 190.228 Z" style="stroke: rgb(0, 0, 0); fill: url(#gradient-12);" transform="matrix(-1, 0, 0, -1, 386.526001, 412.09201)"/>
