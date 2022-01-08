@@ -22,6 +22,14 @@
     
     <script>
 	    
+      jQuery(function() {
+      $.extend($.i18n.parser.emitter, {
+        appname: function() {
+          return "Bug shooting";
+        }
+        });
+      });
+
        const allLocales = new Set(['de-DE', 'en-US'])
        
        var locale = getCookie('locale');
