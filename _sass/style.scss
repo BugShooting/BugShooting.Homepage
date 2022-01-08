@@ -56,12 +56,13 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
 }
 .header .logo {
-  max-height: 2em;
+  max-height: 3em;
 }
+
 .hero-header {
     background: #016cc7;
     min-height: 300px;
-    padding: 1em 5em 5em 5em;
+    padding: 5em;
     color: #fff;
 }
 .hero-header h1 {
@@ -80,7 +81,6 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 3em;
 }
 .hero-header .rocket {
-    margin-top: 2em;
     max-width: 100%;
     -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
@@ -92,14 +92,17 @@ a:link, a:visited, a:hover, a:active {
 .row-title {
     font-weight: 400;
 }
-.feature {
-    padding: 20px;
-    margin-top: 30px;
-}
+
 .feature_symbol {
     font-size: 5em;
     color: #016cc7;
 }
+
+.feature {
+    padding: 20px;
+    margin-top: 30px;
+}
+
 .whatnext {
     background-color: yellowgreen;
 }
@@ -107,20 +110,10 @@ a:link, a:visited, a:hover, a:active {
     background-color: #2a2a2a;
     color: #fff;
 }
+
 .footer {
     background-color: #2a2a2a;
     color: #fff;
-}
-.languageselect {
-    border:0px;
-    outline:0px;
-    padding: 5px;
-    color: #fff;
-    background:none;
-}
-.languageselect option {
-    color: #000;
-    background-color:#fff;
 }
 
 @-webkit-keyframes bounce { 
