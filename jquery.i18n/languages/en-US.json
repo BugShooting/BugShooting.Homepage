@@ -51,6 +51,6 @@
 	"LicenseUnlockDescription": "Here you can send unlock request of your {{appname}} license.",
 	"SendUnlockRequest": "Send unlock request",
 	"LicenseUnlockSuccess": "You will receive an email notification once the license has been unlocked.",
-        "LicenseName": "Name",
-        "LicenseSerialID": "Serial ID"
+	"LicenseName": "Name",
+	"LicenseSerialID": "Serial ID"
 }

@@ -51,6 +51,6 @@
 	"LicenseUnlockDescription": "Hier können Sie die Entsperrung ihrer {{appname}} Lizenz anfragen.",
 	"SendUnlockRequest": "Entsperrung anfragen",
 	"LicenseUnlockSuccess": "Sie bekommen eine Email-Benachrichtigung sobald die Lizenz entsperrt wurde.",
-        "LicenseName": "Name",
-        "LicenseSerialID": "Serial ID"
+	"LicenseName": "Name",
+	"LicenseSerialID": "Serial ID"
 }
