@@ -2,9 +2,30 @@
 layout: main
 ---
 
-<div class="container-fluid">
+<div class="container-fluid hero-header">
 
-  <div class="row hero-header" id="home">
+  <div class="row">
+
+    <div class="col-md-10">
+
+      <div class="float-end">
+        <span class="ti-world"></span>
+        <select id="languageSelect" class="languageselect" onchange="setLocale(this.value)">
+            <option value="en-US">English</option>
+            <option value="de-DE">Deutsch</option>
+        </select>
+      </div>
+    
+      <script>
+        document.getElementById('languageSelect').value = $.i18n().locale;
+      </script>
+
+   </div>
+
+  </div>
+
+  <div class="row">
+
     <div class="col-md-7">
       <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="..."/>
       <h1 data-i18n="SiteTitle">Screen-Capture Software.</h1>
@@ -14,6 +35,7 @@ layout: main
     <div class="col-md-5 hidden-sm hidden-xs">
       <img src="{{ site.baseurl }}/assets/bug_large.png" class="rocket" alt="..."/>
     </div>
+
   </div>
 
 </div>
