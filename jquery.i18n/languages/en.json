@@ -25,7 +25,7 @@
 	"Documentation": "Documentation",
 	"Contact": "Contact",
 	"ActivateLicense": "Activate License",
-	"HelpTranslate": "Help Translate",
+	"HelpTranslate": "Help translate {{appname}} to your language",
 	"NeedMore": "Need More?",
 	"Oops": "Oops!",
 	"SomethingWrong": "Something went wrong.",

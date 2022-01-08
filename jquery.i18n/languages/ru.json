@@ -25,7 +25,7 @@
 	"Documentation": "Документация",
 	"Contact": "Связь",
 	"ActivateLicense": "Активировать лицензию",
-	"HelpTranslate": "Помогите с переводом",
+	"HelpTranslate": "Помогите перевести {{appname}} на ваш язык",
 	"NeedMore": "Нужно больше?",
 	"Oops": "Упс!",
 	"SomethingWrong": "Что-то пошло не так.",
