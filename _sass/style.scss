@@ -31,22 +31,6 @@ a:link, a:visited, a:hover, a:active {
     background-color: #dd5138;
     color: #fff;
 }
-.btn-green {
-  background-color: #5cb85c;
-  color: #fff;
-}
-.btn-yellow {
-	background-color: #fcd93b;
-	color: #2a2a2a;
-	opacity: 0.8;
-}
-.btn-yellow:hover {
-    opacity: 1;
-}
-.btn-yellow.disabled:hover,
-.btn-yellow[disabled]:hover {
-    opacity: 0.65;
-}
 .content-ct {
     text-align: center;
 }
@@ -153,16 +137,5 @@ a:link, a:visited, a:hover, a:active {
     .hero-header {
         padding: 3em 1em 1em 1em;
         text-align: center;
-    }
-    .speaker .feature {
-        width: 100%
-    }
-    .footer-credit {
-        text-align: center;
-        padding: 40px 20px;
-    }
-    ul.footer-menu {
-        text-align: center;
-        margin-top: 30px;
     }
 }
