@@ -30,7 +30,7 @@
         });
       });
 
-       const allLocales = new Set(['en', 'de', 'ru', 'it'])
+       const allLocales = new Set(['en-US', 'de-DE', 'ru-RU', 'it-IT'])
        
        var locale = getCookie('locale');
 	    
@@ -39,7 +39,7 @@
        }
 	    
        if (!allLocales.has($.i18n().locale)) {
-        $.i18n().locale = 'en';
+        $.i18n().locale = 'en-US';
        }
 
        $.i18n().load('/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
