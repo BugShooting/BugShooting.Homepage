@@ -42,6 +42,8 @@
         $.i18n().locale = 'en';
        }
 
+       $.i18n().fallbackLocale = 'en';
+
        $.i18n().load('/jquery.i18n/languages/' + $.i18n().locale + '.json', $.i18n().locale).done(
           function () {
 	          $('body').i18n(); 
