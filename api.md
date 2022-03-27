@@ -1,1 +1,1 @@
-<script> window.location.href = 'https://docs.bugshooting.com'; </script>
+<script> window.location.href = 'https://docs.bugshooting.com/api'; </script>
