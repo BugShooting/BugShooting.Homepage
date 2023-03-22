@@ -1,4 +1,4 @@
 <script>
-  window.location.href = 'https://services.bugshooting.com/rest/download';
-  window.location.href = '/';
+  window.open('https://services.bugshooting.com/rest/download');
+  window.location = '/';
 </script>
